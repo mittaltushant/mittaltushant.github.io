@@ -326,7 +326,7 @@ a {
 main {
   margin: 0 0 0 auto;
   padding: 132px 0;
-  width: 736px; }
+  width: 616px; }
   @media only screen and (max-width: 1080px) {
     main {
       margin: 0 auto;
@@ -402,7 +402,7 @@ main {
               flex-direction: column; } }
 
 .post-details {
-  width: 598px; }
+  width: 488px; }
   @media only screen and (max-width: 700px) {
     .post-details {
       width: 100%; } }
