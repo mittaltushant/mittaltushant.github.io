@@ -43,6 +43,42 @@
   <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Libre+Baskerville:400,400i,700" rel="stylesheet">
   <link rel="stylesheet" href="tushant.css">
 
+<!-------MathJax--------->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+
+<!-----------Abstract toggles (from Josh's website)-------->
+<script type="text/javascript">
+function mytoggle(id) {
+var elem = document.getElementById(id);
+var theplus = document.getElementById(id + "_plus");
+if (theplus.alt == "Contract text") {
+  elem.style.display = "none";
+  theplus.src = "images/plus.gif";
+  theplus.alt = "Expand text";
+} else {
+  elem.style.display = "block";
+  theplus.src = "images/minus.gif";
+  theplus.alt = "Contract text";
+}
+}
+</script>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src ="js/abstract.js"> </script>
+<script type="text/javascript">
+function toggle (t) {
+if (t.childNodes[0].innerHTML == "Hide abstract") {
+    t.childNodes[0].innerHTML = "Show full abstract";
+} else {
+    t.childNodes[0].innerHTML = "Hide abstract";
+}
+}
+</script>
+
 
 </head>
 
@@ -63,13 +99,141 @@
 <ul>
 
 
-      <li>
+  <li>
+    <div class="post" >
+      <span class="accent fixed-date">Innovations in Theoretical Computer Science (ITCS)'22</span>
+      <div class="post-details">
+        <h2>Explicit Ableian Lifts and Quantum LDPC Codes <a href="" ><span class="accent icons"><i class="fa fa-file-pdf-o"></i></span></a> </h2>
+        <p class = "authors"> Joint work with <a href ="https://granha.github.io/">Fernando G. Jeronimo</a>, <a href ="http://www.cs.cmu.edu/~odonnell/">Ryan O'Donnell</a>, <a href ="https://www.cs.cmu.edu/~preisben/">Pedro Paredes</a> and <a href ="https://home.ttic.edu/~madhurt/">Madhur Tulsiani</a>.</p>
+        <p class= "excerpt"> We construct graphs with symmetries of abelian groups via derandomized lifts. One application is explicit constructions of LDPC codes, both classical and quantum.</p>
+        <a class="absbutton" onclick="mytoggle('abs3')"><img src="images/plus.gif" id="abs3_plus" width="17" height="17">&nbsp;Abstract</a>&nbsp;&nbsp;
+      <a class="absbutton" onclick="mytoggle('bib3')"><img src="images/plus.gif" id="bib3_plus"  width="17"  height="17" >&nbsp;BibTeX</a><br />
+
+      <div class="bibtex" id="bib3">
+<pre>
+</pre>
+    </div>
+    <div class="abstract" id="abs3">
+
+      For an abelian group \(H\) acting on the set \([\ell]\), an
+      \( (H,\ell) \)-lift of a graph \(G_0 \) is a graph obtained by replacing each
+      vertex by \(\ell\) copies, and each edge by a matching corresponding to
+      the action of an element of \(H\).
+      <br/><br/>
+
+
+      Expanding graphs obtained via abelian lifts, form a key ingredient in
+      the recent breakthrough constructions of quantum LDPC codes,
+      (implicitly) in the fiber bundle codes by Hastings, Haah and O'Donnell
+      [STOC 2021] achieving distance \(\widetilde{\Omega}(N^{3/5})\),
+      and in those by Panteleev and Kalachev [IEEE Trans. Inf. Theory 2021] of distance
+      \(\Omega(N/\log(N))\).<br/><br/>
+
+      However, both these constructions are <i>non-explicit</i>. In
+      particular, the latter relies on a randomized construction of expander
+      graphs via abelian lifts by Agarwal et al. [SIAM J. Discrete Math
+      2019].<br/><br/>
+
+      In this work, we show the following <i>explicit</i> constructions of
+      expanders obtained via abelian lifts. For every (transitive) abelian
+      group \(H \leqslant \mathrm{Sym}(\ell)\), constant degree \(d \ge 3\) and
+      \(\epsilon > 0\), we construct explicit \(d\)-regular expander graphs \(G\)
+      obtained from an \((H,\ell)\)-lift of a (suitable) base \(n\)-vertex
+      expander \(G_0\) with the following parameters:<br/>
+
+      <ul>
+        <li> (i) \(\lambda(G) \le 2\sqrt{d-1} + \epsilon\), for any lift size \(\ell \le 2^{n^{\delta}}\) where \(\delta=\delta(d,\epsilon)\), </li>
+        <li>(ii) \(\lambda(G) \le \epsilon \cdot d\), for any lift size \(\ell \le 2^{n^{\delta_0}}\) for a fixed \(\delta_0 > 0\), when \(d \ge d_0(\epsilon)\), or</li>
+        <li>(iii) \(\lambda(G) \le \widetilde{O}(\sqrt{d})\), for lift size ``exactly'' \(\ell = 2^{\Theta(n)}\).</li>
+      </ul><br/><br/>
+
+
+      As corollaries, we obtain <i>explicit</i> quantum lifted product codes
+      of Panteleev and Kalachev of almost linear distance (and also in a
+      wide range of parameters) and <i>explicit</i> classical quasi-cyclic
+      LDPC codes with wide range of circulant sizes.<br/><br/>
+
+      Items (i) and (ii) above are obtained by extending the techniques
+      of Mohanty,  O'Donnell and Paredes [STOC 2020] for \(2\)-lifts to much
+      larger abelian lift sizes (as a byproduct simplifying their
+      construction). This is done by providing a new encoding of special
+      walks arising in the trace power method, carefully "compressing"
+      depth-first search traversals. Result \((iii)\) is via a simpler proof
+      of Agarwal et al. [SIAM J. Discrete Math 2019] at the expense of
+      polylog factors in the expansion.
+
+
+    </div>
+<!---
+        <p onclick="toggle(this)"><a href="#" >Show full abstract</a></p>
+
+        <p><a href="#" class="abstract">Show full abstract</a></p>
+        <p class = "abstracttext">  When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+  \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\] </p>
+-->
+
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <div class="post" >
+      <span class="accent fixed-date">Innovations in Theoretical Computer Science (ITCS)'22</span>
+      <div class="post-details">
+        <h2>Symbolic determinant identity testing and non-commutative ranks of matrix Lie algebras  <a href="https://arxiv.org/abs/2109.06403" ><span class="accent icons"><i class="fa fa-file-pdf-o"></i></span></a> </h2>
+        <p class="authors"> Joint work with <a href ="http://old.sztaki.hu/~ivanyos/">Gábor Ivanyos</a> and <a href ="">Youming Qiao</a> . </p>
+
+          <a class="absbutton" onclick="mytoggle('abs2')"><img src="images/plus.gif" id="abs2_plus" width="17" height="17">&nbsp;Abstract</a>&nbsp;&nbsp;
+          <a class="absbutton" onclick="mytoggle('bib2')"><img src="images/plus.gif" id="bib2_plus"  width="17"  height="17" >&nbsp;BibTeX</a><br />
+          <div class="bibtex" id="bib2">
+        <pre>
+        </pre>
+        </div>
+        <div class="abstract" id="abs2">
+          One approach to make progress on the symbolic determinant identity testing
+(SDIT) problem is to study the structure of singular matrix spaces. After
+settling the non-commutative rank problem (Garg--Gurvits--Oliveira--Wigderson,
+<i>Found. Comput. Math.</i> 2020; Ivanyos--Qiao--Subrahmanyam,
+<i>Comput. Complex.</i> 2018), a
+natural next step is to understand singular matrix spaces whose non-commutative
+rank is full. At present, examples of such matrix spaces are mostly sporadic,
+so it is desirable to discover them in a more systematic way.<br/><br/>
+
+In this paper, we make a step towards this direction, by studying the family of matrix spaces that are closed
+under the commutator operation, that is, matrix Lie algebras. On the one hand, we demonstrate that matrix
+Lie algebras over the complex number field give rise to singular matrix spaces
+with full non-commutative ranks. On the other hand, we show that SDIT of such
+spaces can be decided in deterministic polynomial time. Moreover, we give a
+characterization for the matrix Lie algebras to yield a matrix space possessing
+singularity certificates as studied by Lovász(<i>B. Braz. Math. Soc.</i>, 1989) and Raz and Wigderson (<i>Building Bridges II</i>, 2019).
+    </div>
+
+
+      </div>
+    </div>
+  </li>
+
+
+  <li>
         <div class="post" >
           <span class="accent fixed-date">Research in Number Theory '18</span>
           <div class="post-details">
             <h2>The Mahler measure for arbitrary tori  <a href="https://link.springer.com/article/10.1007/s40993-018-0112-3" ><span class="accent icons"><i class="fa fa-file-pdf-o"></i></span></a> </h2>
-            <p class="excerpt"> My first (and the only yet) publication! Work done with Matilde Lalin regarding Mahler measure of elliptic curves over arbirary tori</p>
+            <p class="authors"> Joint work with <a href ="https://dms.umontreal.ca/~mlalin/"> Matilde Lalín </a></p>
+              <p class="excerpt"> My first publication! </p>
+              <a class="absbutton" onclick="mytoggle('abs1')"><img src="images/plus.gif" id="abs1_plus" width="17" height="17">&nbsp;Abstract</a>&nbsp;&nbsp;
+              <a class="absbutton" onclick="mytoggle('bib1')"><img src="images/plus.gif" id="bib1_plus"  width="17"  height="17" >&nbsp;BibTeX</a><br />
+
+              <div class="bibtex" id="bib1">
+              <pre>
+              </pre>
+              </div>
+              <div class="abstract" id="abs1">
+We consider a variation of the Mahler measure where the defining integral is performed over a more general torus.
+ We focus our investigation on two particular polynomials related to certain elliptic curve \(E\) and we establish new formulas for this variation of the Mahler measure in terms of \(L'(E,0)\).
           </div>
+
+
         </div>
       </li>
 

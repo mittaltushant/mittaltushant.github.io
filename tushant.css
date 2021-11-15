@@ -410,7 +410,9 @@ main {
 .excerpt {
   font-size: 14px;
   line-height: 1.73;
+  font-weight:200;
   margin: 0; }
+
 
 header {
   -webkit-box-align: center;
@@ -562,3 +564,80 @@ svg {
       flex-shrink: 0; }
 
       /* Animated t */
+
+
+.authors {
+        font-size: 14px;
+        line-height: 1.73;
+        margin: 0;
+        color:grey;
+       }
+
+      /* From Josh's website */
+.absbutton{
+        cursor:pointer;
+        color:grey;
+        font-size: 14px;
+      }
+
+.pub {
+  margin-bottom:16pt;
+}
+
+.abstract {
+  display:none;
+  height:auto;
+  margin:0;
+  margin-left:10px;
+  border:1px dashed #9ac0cd;
+  width:700px;
+  padding:10px;
+  background-color:#e5ecf9;
+  font-size: 14px;
+}
+
+.abstract a {
+  color:inherit;
+}
+
+.authors a {
+  font-size: 14px;
+  line-height: 1.73;
+  margin: 0;
+  color:grey;
+}
+
+.advisors a {
+  text-decoration:inherit;
+  color:inherit;
+}
+
+.bibtex {
+  display:none;
+  height:auto;
+  margin:0;
+  margin-left:10px;
+  border:1px dashed #9ac0cd;
+  width:700px;
+  padding:10px;
+  background-color:#e5ecf9;
+/*  white-space:pre;
+  family:monospace;*/
+}
+
+.problem {
+  font-variant:small-caps;
+}
+
+.cc {
+}
+/*
+
+
+ .absbutton {
+   font-size: 14px;
+   line-height: 1.73;
+   margin: 0;
+   color:grey;
+  }
+*/
