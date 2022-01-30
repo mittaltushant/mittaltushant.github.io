@@ -336,6 +336,25 @@ main {
       padding: 32px 16px;
       width: 100%; } }
 
+      .lhs {
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 2.4;
+        margin: 4px 0 0;
+        text-align: right;
+        width: 72px; }
+        @media only screen and (max-width: 700px) {
+          .lhs {
+            margin: 7px 0 0;
+            -webkit-box-ordinal-group: 3;
+                -ms-flex-order: 2;
+                    order: 2;
+            text-align: left;
+            width: auto; } }
+
+
 .fixed-date {
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -583,6 +602,12 @@ svg {
 
       /* Animated t */
 
+.venue{
+              font-size: 16px;
+              line-height: 1.73;
+              margin: 0;
+              color:grey;
+             }
 
 .authors {
         font-size: 14px;
