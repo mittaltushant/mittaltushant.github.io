@@ -358,7 +358,7 @@ main {
 .fixed-date {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 600;
   line-height: 2.4;
   margin: 4px 0 0;
