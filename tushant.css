@@ -299,7 +299,7 @@ li {
   min-height: 100%; }
 
 h1,
-h2 {
+h2,h4 {
   color: #242525;
   margin: 0; }
 
@@ -312,6 +312,13 @@ h2 {
   font-size: 16px;
   font-weight: 600;
   line-height: 1.73; }
+
+h4 {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.73;
+    font-family: "Palatino";
+   }
 
 em {
   font-weight: 400; }
@@ -603,18 +610,19 @@ svg {
       /* Animated t */
 
 .venue{
-              font-size: 16px;
+              font-size: 13px;
               line-height: 1.73;
               margin: 0;
               color:grey;
              }
 
 .authors {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.73;
         margin: 0;
         color:grey;
        }
+
 
       /* From Josh's website */
 .absbutton{
@@ -622,6 +630,13 @@ svg {
         color:grey;
         font-size: 14px;
       }
+
+.publinks{
+        cursor:pointer;
+        color:grey;
+        font-size: 14px;
+      }
+
 
 .pub {
   margin-bottom:16pt;
@@ -633,7 +648,7 @@ svg {
   margin:0;
   margin-left:10px;
   border:1px dashed #9ac0cd;
-  width:700px;
+  width:600px;
   padding:10px;
   background-color:#e5ecf9;
   font-size: 14px;
@@ -644,7 +659,7 @@ svg {
 }
 
 .authors a {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.73;
   margin: 0;
   color:grey;
@@ -661,7 +676,7 @@ svg {
   margin:0;
   margin-left:10px;
   border:1px dashed #9ac0cd;
-  width:700px;
+  width:600px;
   padding:10px;
   background-color:#e5ecf9;
 /*  white-space:pre;
