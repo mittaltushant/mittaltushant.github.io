@@ -173,7 +173,22 @@
             <h4>  Derandomized Non-Abelian Homomorphism Testing in Low Soundness Regime </h4>
               <p class = "authors">Joint work with <a href ="https://sra2.github.io/souryar/">Sourya Roy</a>.</p>
               <a class="publinks" href="https://arxiv.org/abs/2405.18998"><img src="images/arxiv-logomark-small.svg" id="abs1_plus" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
-            </div>
+              <a class="absbutton" onclick="mytoggle('abs9')"><img src="images/plus.gif" id="abs9_plus" width="12" height="12">&nbsp;Abstract</a>&nbsp;&nbsp;
+              <a class="absbutton" onclick="mytoggle('bib9')"><img src="images/plus.gif" id="bib9_plus"  width="12"  height="12" >&nbsp;BibTeX</a>
+          
+          <div class="bibtex" id="bib9">
+      <pre>
+@misc{MR24,
+      title={{Derandomized Non-Abelian Homomorphism Testing in Low Soundness Regime}}, 
+      author={Tushant Mittal and Sourya Roy},
+      year={2024},
+      eprint={2405.18998}
+    }
+    </pre></div>
+    <div class="abstract" id="abs9">
+    We give a randomness-efficient homomorphism test in the low soundness regime for functions, \(f:G\to \mathbb{U}_t\), from an arbitrary finite group \(G\) to \(t \times t\) unitary matrices. We show that if such a function passes a derandomized Blum&ndash;Luby&ndash;Rubinfeld (BLR) test (using small-bias sets), then (i) it correlates with a function arising from a genuine homomorphism, and (ii) it has a non-trivial Fourier mass on a low-dimensional irreducible representation.</br> </br>
+In the full randomness regime, such a test for matrix-valued functions on finite groups implicitly appears in the works of Gowers and Hatami [Sbornik: Mathematics '17], and Moore and Russell [SIAM Journal on Discrete Mathematics '15]. Thus, our work can be seen as a near-optimal derandomization of their results. Our key technical contribution is a "degree-2 expander mixing lemma'' that shows that Gowers' \(U^2\) norm can be efficiently estimated by restricting it to a small-bias subset. Another corollary is a "derandomized'' version of a useful lemma due to Babai, Nikolov, and Pyber [SODA'08] and Gowers [Comb. Probab. Comput.'08].
+    </div>
         </div>
       </li>
 
@@ -196,6 +211,27 @@
               <p class = "authors">Joint work with <a href ="https://sra2.github.io/souryar/">Sourya Roy</a>.</p>
               <a class="publinks" href="https://arxiv.org/abs/2509.05871"><img src="images/arxiv-logomark-small.svg" id="abs1_plus" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
               <a class="publinks" href="https://www.youtube.com/watch?v=j1fNF8hQfCI"><img src="images/yt_icon.svg" id="abs1_plus" width="18" height="14">&nbsp;Video</a>&nbsp;&nbsp;
+              <a class="absbutton" onclick="mytoggle('abs8')"><img src="images/plus.gif" id="abs8_plus" width="12" height="12">&nbsp;Abstract</a>&nbsp;&nbsp;
+              <a class="absbutton" onclick="mytoggle('bib8')"><img src="images/plus.gif" id="bib8_plus"  width="12"  height="12" >&nbsp;BibTeX</a>
+          
+          <div class="bibtex" id="bib8">
+      <pre>
+@misc{MR25,
+      title={{A General Framework for Low Soundness Homomorphism Testing}}, 
+      author={Tushant Mittal and Sourya Roy},
+      year={2025},
+      eprint={2509.05871}
+    }
+    </pre></div>
+    <div class="abstract" id="abs8">
+                We introduce a general framework to design and analyze algorithms for the problem of testing homomorphisms between finite groups in the low-soundness regime.<br/>
+ 
+                In this regime, we give the first constant-query tests for various families of groups. These include tests for: (i) homomorphisms between arbitrary cyclic groups, (ii) homomorphisms between any finite group and \(\mathbb{Z}_p\), (iii) automorphisms of dihedral and symmetric groups, (iv) inner automorphisms of non-abelian finite simple groups and extraspecial groups, and (v) testing linear characters of \( \mathsf{GL}_n(\mathbb{F}_q) \), and finite-dimensional Lie algebras over \(\mathbb{F}_q\). We also recover the result of Kiwi [TCS'03] for testing homomorphisms between \(\mathbb{F}_q^n\) and \(\mathbb{F}_q\). <br/><br/>
+
+Prior to this work, such tests were only known for abelian groups with a constant maximal order (such as \(\mathbb{F}_q^n\)). No tests were known for non-abelian groups. <br/><br/>
+
+As an additional corollary, our framework gives combinatorial list decoding bounds for cyclic groups with list size dependence of \(O(\varepsilon^{-2})\) (for agreement parameter \(\varepsilon\)). This improves upon the currently best-known bound of \(O(\varepsilon^{-105})\)  due to Dinur, Grigorescu, Kopparty, and Sudan [STOC'08], and Guo and Sudan [RANDOM'14].
+                </div>
           </div>
         </div>
       </li>
@@ -208,6 +244,36 @@
               <p class = "venue"> RANDOM'25. </p> 
               <p class = "authors">Joint work with <a href ="https://granha.github.io/">Fernando G. Jeronimo</a> and <a href ="https://sra2.github.io/souryar/">Sourya Roy</a>.</p>
                             <a class="publinks" href="https://www.arxiv.org/abs/2507.14445"><img src="images/arxiv-logomark-small.svg" id="abs1_plus" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
+              <a class="absbutton" onclick="mytoggle('abs7')"><img src="images/plus.gif" id="abs7_plus" width="12" height="12">&nbsp;Abstract</a>&nbsp;&nbsp;
+                 <a class="absbutton" onclick="mytoggle('bib7')"><img src="images/plus.gif" id="bib7_plus"  width="12"  height="12" >&nbsp;BibTeX</a>
+          
+          <div class="bibtex" id="bib7">
+      <pre>
+@InProceedings{JMR25,
+  author =	{Jeronimo, Fernando Granha and 
+    Mittal, Tushant  and Roy, Sourya},
+  title =	{{Pseudorandomness of Expander Walks via
+     Fourier Analysis on Groups}},
+  booktitle =	{29th International Conference on
+     Randomization and Computation (RANDOM)},
+  year =	{2025},
+  eprint = {2507.14445},
+	doi = {10.4230/LIPIcs.APPROX/RANDOM.2025.49}
+}
+    </pre></div>
+              <div class="abstract" id="abs7">
+                One approach to study the pseudorandomness properties of walks on expander graphs is to label the vertices of an expander with elements from an alphabet \(\Sigma\), and study the mean of functions over \(\Sigma^n\). We say expander walks \(\varepsilon\)-fool a function if, for any unbiased labeling of the vertices, the expander walk mean is \(\varepsilon\)-close to the true mean. We show that:
+                <ul>
+<li> The class of symmetric functions is \(O(|\Sigma|\cdot\lambda)\)-fooled by expander walks over any generic \(\lambda\)-expander, and any alphabet \(\Sigma\) . This generalizes the result of Cohen, Peri, Ta-Shma [STOC'21] which analyzes it for \( |\Sigma| = 2\), and exponentially improves the previous bound of  \( O(|\Sigma|^{O(|\Sigma|)}\cdot \lambda ) \), by Golowich and Vadhan [CCC'22]. Additionally, if the expander is a Cayley graph over \(\mathbb{Z}_{|\Sigma|}\), we get a further improved bound of \(O(\sqrt{|\Sigma|}\cdot\lambda)\).</li>
+</ulul>
+Morever, when \(\Sigma\) is a finite group \(G\), we show the following for functions over \(G^n\):
+<ul>
+<li> The class of symmetric class functions is \( O(\frac{\sqrt{|G|}}{D}⋅ \lambda) \)-fooled by expander walks over "structured" \(\lambda\)-expanders, if \(G\) is \(D\)-quasirandom.</li>
+<li> We show a lower bound of \(\Omega(\lambda)\) for symmetric functions for any finite group \(G\) (even for "structured" \(\lambda\)-expanders).</li>
+<li> We study the Fourier spectrum of a class of non-symmetric functions arising from word maps, and show that they are exponentially fooled by expander walks.</li>
+</ul>
+Our proof employs Fourier analysis over general groups, which contrasts with earlier works that have studied either the case of \(\mathbb{Z}_2\) or \(\mathbb{Z}\). This enables us to get quantitatively better bounds even for unstructured sets.
+              </div>
 
           </div>
         </div>
@@ -221,9 +287,43 @@
             <p class = "venue"> STOC'25 (Invited to Special Issue). </p> 
               <p class = "authors">Joint work with <a href ="https://granha.github.io/">Fernando G. Jeronimo</a>,  <a href ="https://sites.google.com/view/shashanks">Shashank Srivastava</a>, and <a href ="https://home.ttic.edu/~madhurt/">Madhur Tulsiani</a>.</p>
               <a class="publinks" href="https://arxiv.org/abs/2502.07308"><img src="images/arxiv-logomark-small.svg" id="abs1_plus" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
-              <a class="absbutton" onclick="mytoggle('abs5')"><img src="images/plus.gif" id="abs5_plus" width="12" height="12">&nbsp;Abstract</a>&nbsp;&nbsp;
-              <div class="abstract" id="abs4">
+              <a class="publinks" href="https://www.youtube.com/watch?v=8u0s2YQDUcs"><img src="images/yt_icon.svg" id="abs1_plus" width="18" height="14">&nbsp;Video (Madhur)</a>&nbsp;&nbsp;
+              <a class="absbutton" onclick="mytoggle('abs6')"><img src="images/plus.gif" id="abs6_plus" width="12" height="12">&nbsp;Abstract</a>&nbsp;&nbsp;
+               <a class="absbutton" onclick="mytoggle('bib6')"><img src="images/plus.gif" id="bib6_plus"  width="12"  height="12" >&nbsp;BibTeX</a>
+          
+          <div class="bibtex" id="bib6">
+      <pre>
+@inproceedings{JMST25,
+author = {Jeronimo, Fernando Granha and Mittal, Tushant 
+  and Srivastava, Shashank and Tulsiani, Madhur},
+title = {{Explicit Codes Approaching Generalized Singleton Bound 
+  using Expanders}},
+year = {2025},
+doi = {10.1145/3717823.3718302},
+booktitle = {Proceedings of the 57th Annual ACM 
+  Symposium on Theory of Computing (STOC)},
+eprint = {2502.07308}
+}
+    </pre></div>
+              <div class="abstract" id="abs6">
+                We construct a new family of explicit codes that are list decodable to capacity and achieve an optimal list size of \(O(\frac{1}{\varepsilon})\). In contrast to existing explicit constructions of codes achieving list decoding capacity, our arguments do not rely on algebraic structure but utilize simple combinatorial properties of expander graphs. <br/>
+Our construction is based on a celebrated distance amplification procedure due to Alon, Edmonds, and Luby [FOCS'95], which transforms any high-rate code into one with near-optimal rate-distance tradeoff. We generalize it to show that the same procedure can be used to transform any high-rate code into one that achieves list decoding capacity. Our proof can be interpreted as a "local-to-global" phenomenon for (a slight strengthening of) the generalized Singleton bound. Using this construction, for every \(R, \varepsilon \in (0,1)\) and \(k \in \mathbb{N}^+\), we obtain an <em>explicit</em> family of codes \( C \subseteq \Sigma^n \), with rate \(R\) such that,
+
+<ul>
+<li> They achieve the \(\varepsilon\)-relaxed generalized Singleton bound: for any \(g \in \Sigma^n \) and any list \(H\) of at most \(k\) codewords, we have,
+\( \mathbb{E}_{h \in H}[\Delta(g,h)] ~\geq~ \frac{|H|-1}{|H|} \cdot (1-R-\varepsilon) \).
+</li>
+<li>
+ The alphabet size is a constant depending only on \(\varepsilon\) and \(k\).
+</li>
+<li>
+ They can be list decoded up to radius \(\frac{k-1}{k}(1-R-\varepsilon)\), in time \(n^{O_{k,\varepsilon}(1)}\).
+ </li>
+</ul>
+As a corollary of our result, we also obtain the first explicit construction of LDPC codes achieving list decoding capacity, and in fact arbitrarily close to the generalized Singleton bound.
+
                 </div>
+                
             </div>
         </div>
       </li>
@@ -236,7 +336,25 @@
             <p class = "venue"> QIP'25 (Poster). </p> 
               <p class = "authors">Joint work with Thiago Bergamaschi, <a href ="https://granha.github.io/">Fernando G. Jeronimo</a>,  <a href ="https://sites.google.com/view/shashanks">Shashank Srivastava</a>, and <a href ="https://home.ttic.edu/~madhurt/">Madhur Tulsiani</a>.</p>
               <a class="publinks" href="https://arxiv.org/abs/2411.04306"><img src="images/arxiv-logomark-small.svg" id="abs1_plus" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
-              <a class="publinks" href="talks/QIP_Poster.pdf" ><span class="accent icons" ><i class="far fa-file-pdf fa-xs"></i></span>Poster</a>
+              <a class="publinks" href="talks/QIP_Poster.pdf" ><span class="accent icons" ><i class="far fa-file-pdf fa-xs"></i></span>Poster</a>&nbsp;&nbsp;
+              <a class="absbutton" onclick="mytoggle('abs5')"><img src="images/plus.gif" id="abs5_plus" width="12" height="12">&nbsp;Abstract</a>&nbsp;&nbsp;
+              <a class="absbutton" onclick="mytoggle('bib5')"><img src="images/plus.gif" id="bib5_plus"  width="12"  height="12" >&nbsp;BibTeX</a>
+          
+          <div class="bibtex" id="bib5">
+      <pre>
+@misc{BJMST25,
+  title = {{List Decodable Quantum LDPC Codes}},
+  author = {Bergamaschi, Thiago and Jeronimo, Fernando Granha and 
+    Mittal, Tushant and Srivastava, Shashank and Tulsiani, Madhur },
+  year = {2025},
+  note = {Quantum Information Processing (QIP) 2025 (Poster).},
+  eprint = {2411.04306}
+}
+    </pre></div>
+    <div class="abstract" id="abs5">
+                We give a construction of Quantum Low-Density Parity Check (QLDPC) codes with near-optimal rate-distance tradeoff and efficient list decoding up to the Johnson bound in polynomial time. Previous constructions of list decodable good distance quantum codes either required access to a classical side channel or were based on algebraic constructions that preclude the LDPC property. </br></br>
+Our construction relies on new algorithmic results for codes obtained via the quantum analog of the distance amplification scheme of Alon, Edmonds, and Luby [FOCS 1995]. These results are based on convex relaxations obtained using the Sum-of-Squares hierarchy, which reduce the problem of list decoding the distance amplified codes to unique decoding the starting base codes. Choosing these base codes to be the recent breakthrough constructions of good QLDPC codes with efficient unique decoders, we get efficiently list decodable QLDPC codes.
+                </div>
           </div>
         </div>
       </li>
@@ -269,7 +387,7 @@
           
           <div class="bibtex" id="bib4">
       <pre>
-  @InProceedings {JMRW22,
+  @inproceedings {JMRW22,
     author = {Jeronimo, Fernando Granha and
         Mittal, Tushant  and Roy, Sourya and Wigderson, Avi},
     booktitle = 
