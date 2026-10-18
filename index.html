@@ -13,70 +13,34 @@
 </script>
 
 <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Libre+Baskerville:400,400i,700" rel="stylesheet">
-<link rel="stylesheet" href="tushant.css">
+<link rel="stylesheet" href="tushant.css?v=20261018-publish-cleanup">
 
 <link rel="stylesheet" href="academicons-1.9.1/css/academicons.min.css"/>
 <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
 
-<!-------MathJax--------->
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async
-          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
-  
-<!-----------Abstract toggles (from Josh's website)-------->
-<script type="text/javascript">
-  function mytoggle(id) {
-  var elem = document.getElementById(id);
-  var theplus = document.getElementById(id + "_plus");
-  if (theplus.alt == "Contract text") {
-    elem.style.display = "none";
-    theplus.src = "images/plus.gif";
-    theplus.alt = "Expand text";
-  } else {
-    elem.style.display = "block";
-    theplus.src = "images/minus.gif";
-    theplus.alt = "Contract text";
-  }
-  }
-  </script>
-  
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
-  <script src ="js/abstract.js"> </script>
-  <script type="text/javascript">
-  function toggle (t) {
-  if (t.childNodes[0].innerHTML == "Hide abstract") {
-      t.childNodes[0].innerHTML = "Show full abstract";
-  } else {
-      t.childNodes[0].innerHTML = "Hide abstract";
-  }
-  }
-  </script>
-
-
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="My personal website">
+  <meta name="description" content="Tushant Mittal is a theory CS postdoc at Stanford working on pseudorandomness, expansion, and quantum error correction.">
   <meta name="author" content="Tushant Mittal">
   <title>Tushant Mittal</title>
 
 
   <meta property="og:title" content="Tushant Mittal">
-  <meta property="og:description" content="My personal website">
-  <meta property="og:url" content="">
+  <meta property="og:description" content="Tushant Mittal is a theory CS postdoc at Stanford working on pseudorandomness, expansion, and quantum error correction.">
+  <meta property="og:url" content="https://mittaltushant.com/">
 
   <meta property="og:type" content="website">
   <meta name="twitter:site" content="@mittaltushant">
 
 
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
 
-  <link rel="canonical" href="https://mittaltushant.github.io/">
+  <link rel="canonical" href="https://mittaltushant.com/">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Libre+Baskerville:400,400i,700" rel="stylesheet">
-  <link rel="stylesheet" href="tushant2.css">
+  <link rel="stylesheet" href="tushant2.css?v=20261018-portrait">
 
 
   <link rel="stylesheet" href="academicons-1.9.1/css/academicons.min.css"/>
@@ -87,49 +51,50 @@
 
 </head>
 
-  <body>
+  <body class="home-page">
 
 <div class="wrapper">
 
          <header>
 
   <div class="logo logo-closer-to-top-on-mobile">
-      <!---   <div class="t">t</div> -->
-       <img src="images/head.jpeg" width="143px" height="160px"></img>
+       <div class="t" aria-hidden="true">t</div>
 
 
 <!---<a class="accent" href="https://github.com/mittaltushant"><i class="fa-brands fa-github"></a></i> --->
     <div class="under under-large">
       <h1><em>Tushant Mittal</em></h1>
       <div class="social">
-        <a class="accent" href="https://dblp.uni-trier.de/pid/301/8984.html"><i class="ai ai-dblp"></i></a>
-        <a class="accent" href="https://scholar.google.com/citations?hl=en&user=96L2AO0AAAAJ"><i class="fa-brands fa-google-scholar"></i></a>
-        <a class="accent" href="https://www.youtube.com/user/mittaltushant/playlists"><i class="fa-brands fa-youtube"></i></a>
-        <a class="accent" href="https://www.goodreads.com/user/show/5541564-tushant-mittal"><i class="fa-brands fa-goodreads-g"></i></a>
-        <a class="accent make-mail-smaller" href="mailto:mittaltushant@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a class="accent" href="https://dblp.uni-trier.de/pid/301/8984.html" aria-label="DBLP publications"><i class="ai ai-dblp"></i></a>
+        <a class="accent" href="https://scholar.google.com/citations?hl=en&user=96L2AO0AAAAJ" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+        <a class="accent" href="https://www.youtube.com/user/mittaltushant/playlists" aria-label="YouTube playlists"><i class="fa-brands fa-youtube"></i></a>
+        <a class="accent" href="https://www.goodreads.com/user/show/5541564-tushant-mittal" aria-label="Goodreads"><i class="fa-brands fa-goodreads-g"></i></a>
+        <a class="accent make-mail-smaller" href="mailto:mittaltushant@gmail.com" aria-label="Email Tushant Mittal"><i class="fa-solid fa-envelope"></i></a>
       </div>
 
 
+    </div>
+    <img class="mobile-portrait" src="images/head.jpeg" width="136" height="156" alt="Tushant Mittal">
   </div>
 </header>
 <main>
   <ul>
       <li>
-        <div class="post" >
+        <div class="post about-post">
           <span class="accent icons"><i class="fa-solid fa-user"></i></span>
-          <div class="post-details">
+          <div class="post-details bio">
+            <img class="bio-portrait" src="images/head.jpeg" width="136" height="156" alt="Tushant Mittal">
             <h2>About</h2>
-                 <p class="excerpt">A theory CS postdoc (Motwani Fellow) at Stanford University hosted by <a style="color:#f22939" href="https://sites.google.com/site/marywootters"> Mary Wootters</a> and <a style="color:#f22939" href="https://tselilschramm.org/"> Tselil Schramm</a>. I will be joining the Department of Computing at Imperial College London as an Assistant Professor in January 2027. </br></br>
-                  I obtained my Ph.D. at the University of Chicago, where I was extremely fortunate to be advised by <a style="color:#f22939" href="https://home.ttic.edu/~madhurt/"> Madhur Tulsiani</a> and <a style="color:#f22939" href="https://people.cs.uchicago.edu/~simon/"> Janos Simon</a>. My interest in algebra took root at IIT Kanpur where I did my undergrad. 
-                  </br> </br> Research interests include pseudorandomness, (high-dimensional) expansion, quantum error correction, and anything sufficiently seasoned with algebra! 
-                 </p>
+            <p class="excerpt">I'm a theory CS postdoc (Motwani Fellow) at Stanford, hosted by <a class="accent" href="https://sites.google.com/site/marywootters">Mary Wootters</a> and <a class="accent" href="https://tselilschramm.org/">Tselil Schramm</a>. In Jan 2027, I'll join Imperial College London's Department of Computing as an Assistant Professor.</p>
+            <p class="excerpt">I received my Ph.D. from the University of Chicago, advised by <a class="accent" href="https://home.ttic.edu/~madhurt/">Madhur Tulsiani</a> and <a class="accent" href="https://people.cs.uchicago.edu/~simon/">Janos Simon</a>.</p>
+            <p class="excerpt">My research interests include pseudorandomness, (high-dimensional) expansion, quantum error correction, and anything sufficiently seasoned with algebra!</p>
 
           </div>
         </div>
       </li>
       <li>
         <a class="post" href="CV_new.pdf">
-          <span class="accent icons">   <img src="images/resume.jpg" width="33px" height="30px"></img></span>
+          <span class="accent icons">   <img src="images/resume.jpg" width="33" height="30" alt=""></span>
           <div class="post-details">
             <h2>CV</h2>
           </div>
@@ -137,600 +102,21 @@
       </li>
       
       <li>
-        <div class="post">
-          <span class="accent icons"><i class="fa-solid fa-file-lines"></i></span>
-          <div class="post-details">
-            <h2>Preprints</h2>
-          </div>
-        </div>
-      </li>
-  <!--
-       <li>
-        <div class="post" >
-          <span class="accent icons"></span>
-          <div class="post-details">
-            <h4>  Low Soundess Linearity Testing for the Half-Slice </h4>
-              <p class = "authors">Joint work with Haakon Larsen, <a href ="https://www.cs.ucr.edu/~silas/">Silas Richelson</a>, and <a href ="https://sra2.github.io/souryar/">Sourya Roy</a>.</p>
-              <p class = "authors">In Preparation (to be uploaded soon).</p>
-            </div>
-        </div>
-      </li>
--->
-      <li>
-        <div class="post" >
-          <span class="accent icons"></span>
-          <div class="post-details">
-            <h4> Random Quantum LDPC Codes Approaching the Gilbert—Varshamov Bound </h4>
-              <p class = "authors">Joint work with <a href ="https://sites.google.com/view/shashanks/home">Shashank Srivastava</a>, <a href ="https://home.ttic.edu/~madhurt/">Madhur Tulsiani</a>, and <a href ="https://sites.google.com/site/marywootters/">Mary Wootters</a>.</p>
-              <a class="publinks" href="https://arxiv.org/abs/2610.02648"><img src="images/arxiv-logomark-small.svg" id="abs1_plus" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
-              <a class="absbutton" onclick="mytoggle('abs11')"><img src="images/plus.gif" id="abs11_plus" width="12" height="12">&nbsp;Abstract</a>&nbsp;&nbsp;
-              <a class="absbutton" onclick="mytoggle('bib11')"><img src="images/plus.gif" id="bib11_plus"  width="12"  height="12" >&nbsp;BibTeX</a>
-          <div class="bibtex" id="bib11">
-            <pre>
-@misc{MSTW26,
-title={Random Quantum LDPC Codes Approaching the Gilbert-Varshamov Bound}, 
-  author={Tushant Mittal and Shashank Srivastava 
-    and Madhur Tulsiani and Mary Wootters},
-  year={2026},
-  eprint={2610.02648}
-}</pre></div>
-    <div class="abstract" id="abs11">
-      We show that for any \(R,\epsilon>0\) and any prime \(p\geq 2\), there exists an infinite family of \(p\)-ary quantum low-density parity-check (QLDPC) codes, rate \(R\), checks of weight \(O_\epsilon(1)\), and normalized distance at least \(\delta_{\mathrm{GV}}(p,R)-\epsilon\). Here, \(\delta_{\mathrm{GV}}(p,R)\) denotes the quantum Gilbert-Varshamov (GV) bound for \(p\)-ary stabilizer codes.</br> </br>
-
-In fact, we construct an ensemble of such QLDPC codes, such that a random code from this ensemble is close to the GV bound with high probability. Moreover, this ensemble matches the performance of random stabilizer codes on several quantum channels. Specifically, it approaches the quantum capacity of the erasure channel and the hashing bound for memoryless Pauli channels, including the depolarizing channel.</br> </br>
-
-A significant challenge in working with QLDPC codes is that they are necessarily <it>degenerate</it>, i.e., contain many low-weight stabilizers. A key contribution of our work is a construction of QLDPC codes with quantitative control on their degeneracy. These codes are obtained by combining known constructions of asymptotically good QLDPC codes with the expander-based distance amplification procedure of Alon, Edmonds, and Luby [FOCS'95].</br> </br>
-
-Our random ensemble is constructed by starting with these low-degeneracy QLDPC codes near the quantum Singleton bound and concatenating each coordinate with a random inner code. This can be viewed as a quantum analogue of Thommesen's construction, and as an LDPC version of a result of Ouyang, with an appropriately designed outer code.
-</div>
-        </div>
-      </li>
-
-       <li>
-        <div class="post" >
-          <span class="accent icons"></span>
-          <div class="post-details">
-            <h4> Low Soundness Linearity Testing on the Half-Slice  </h4>
-              <p class = "authors">Joint work with Haakon Larsen, <a href ="https://www.cs.ucr.edu/~silas/">Silas Richelson</a>, and <a href ="https://sra2.github.io/souryar/">Sourya Roy</a>.</p>
-              <a class="publinks" href="https://arxiv.org/abs/2605.26450"><img src="images/arxiv-logomark-small.svg" id="abs1_plus" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
-              <a class="absbutton" onclick="mytoggle('abs10')"><img src="images/plus.gif" id="abs10_plus" width="12" height="12">&nbsp;Abstract</a>&nbsp;&nbsp;
-              <a class="absbutton" onclick="mytoggle('bib10')"><img src="images/plus.gif" id="bib10_plus"  width="12"  height="12" >&nbsp;BibTeX</a>
-          <div class="bibtex" id="bib10">
-      <pre>
-@misc{LMRR26,
-    title={{Low Soundness Linearity Testing on the Half-Slice}}, 
-    author={Haakon Larsen and Tushant Mittal and 
-      Silas Richelson and Sourya Roy},
-    year={2026},
-    eprint={2605.26450} 
-}</pre></div>
-    <div class="abstract" id="abs10">
-Let \(f:T\to\{0,1\}\) be a Boolean function on the Boolean half-slice, \(T\), i.e., elements of \(\{0,1\}^n\) with Hamming weight \(n/2\). We show that if \(f(x)+f(y)=f(x+y)\) holds with probability \(\frac{1+\delta}{2}\) over a uniform pair \((x,y)\) such that \(x,y,x+y\in T\), then \(f\) agrees with some linear function on at least \(\frac{1+\delta}{2}-o(1)\) fraction of the points in \(T\). More generally, we show that if \(f\) passes the natural \(k\)-query BLR test with probability \(\frac{1+\delta}{2}\) for any \(k\geq 3\), then it must agree with some affine function at \(\frac{1+\delta^{1/(k-2)}}{2}-o(1)\) fraction of the points in \(T\).</br> </br>
-
-The only other known linearity test for the slice in the low soundness regime (i.e., when \(\delta\) can be arbitrarily small) was given by Kalai, Lifshitz, Minzer, and Ziegler [FOCS'24]. Our result improves upon this result in two significant ways: firstly, it works for \(k=3\) queries, instead of requiring \(k\geq 4\); secondly, our result is sharper, e.g., when \(k=4\), we are able to conclude an agreement of \(\frac{1+\sqrt{\delta}}{2}-o(1)\) instead of \(\frac{1+c\sqrt{\delta}}{2}\) for \(c\approx .0035\). In particular, our result matches (up to the \(o(1)\) term) the conclusion one obtains over the full hypercube via the classical BLR analysis.</br> </br>
-
-Our main technical contribution is a new dense model theorem using bounds on Krawtchouk polynomials. Using these Krawtchouk polynomial bounds, we also obtain a simple \(k\)-query test (\(k\geq 5\)) that avoids any use of the dense model machinery. This simplified test naturally extends to the slice over the \(q\)-ary hypercube, giving the first such result over larger alphabets.
-
-</div>
-        </div>
-      </li>
-
-
-      <li>
-        <div class="post" >
-          <span class="accent icons"></span>
-          <div class="post-details">
-            <h4>  Derandomized Non-Abelian Homomorphism Testing in Low Soundness Regime </h4>
-              <p class = "authors">Joint work with <a href ="https://sra2.github.io/souryar/">Sourya Roy</a>.</p>
-              <a class="publinks" href="https://arxiv.org/abs/2405.18998"><img src="images/arxiv-logomark-small.svg" id="abs1_plus" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
-              <a class="absbutton" onclick="mytoggle('abs9')"><img src="images/plus.gif" id="abs9_plus" width="12" height="12">&nbsp;Abstract</a>&nbsp;&nbsp;
-              <a class="absbutton" onclick="mytoggle('bib9')"><img src="images/plus.gif" id="bib9_plus"  width="12"  height="12" >&nbsp;BibTeX</a>
-          
-          <div class="bibtex" id="bib9">
-      <pre>
-@misc{MR24,
-      title={{Derandomized Non-Abelian Homomorphism Testing 
-        in Low Soundness Regime}}, 
-      author={Tushant Mittal and Sourya Roy},
-      year={2024},
-      eprint={2405.18998}
-    }
-    </pre></div>
-    <div class="abstract" id="abs9">
-    We give a randomness-efficient homomorphism test in the low soundness regime for functions, \(f:G\to \mathbb{U}_t\), from an arbitrary finite group \(G\) to \(t \times t\) unitary matrices. We show that if such a function passes a derandomized Blum&ndash;Luby&ndash;Rubinfeld (BLR) test (using small-bias sets), then (i) it correlates with a function arising from a genuine homomorphism, and (ii) it has a non-trivial Fourier mass on a low-dimensional irreducible representation.</br> </br>
-In the full randomness regime, such a test for matrix-valued functions on finite groups implicitly appears in the works of Gowers and Hatami [Sbornik: Mathematics '17], and Moore and Russell [SIAM Journal on Discrete Mathematics '15]. Thus, our work can be seen as a near-optimal derandomization of their results. Our key technical contribution is a "degree-2 expander mixing lemma'' that shows that Gowers' \(U^2\) norm can be efficiently estimated by restricting it to a small-bias subset. Another corollary is a "derandomized'' version of a useful lemma due to Babai, Nikolov, and Pyber [SODA'08] and Gowers [Comb. Probab. Comput.'08].
-    </div>
-        </div>
-      </li>
-
-     
-
-      <li>
-        <div class="post">
-          <span class="accent icons"><i class="fa-solid fa-people-carry-box"></i></span>
-          <div class="post-details">
-            <h2>Research Publications</h2>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="post" >
-          <span class="accent icons"></span>
-          <div class="post-details">
-            <h4>  A General Framework for Low Soundess Homomorphism Testing </h4>
-            <p class = "venue"> ITCS'26. </p> 
-              <p class = "authors">Joint work with <a href ="https://sra2.github.io/souryar/">Sourya Roy</a>.</p>
-              <a class="publinks" href="https://arxiv.org/abs/2509.05871"><img src="images/arxiv-logomark-small.svg" id="abs1_plus" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
-              <a class="publinks" href="https://www.youtube.com/watch?v=j1fNF8hQfCI"><img src="images/yt_icon.svg" id="abs1_plus" width="18" height="14">&nbsp;Video</a>&nbsp;&nbsp;
-              <a class="absbutton" onclick="mytoggle('abs8')"><img src="images/plus.gif" id="abs8_plus" width="12" height="12">&nbsp;Abstract</a>&nbsp;&nbsp;
-              <a class="absbutton" onclick="mytoggle('bib8')"><img src="images/plus.gif" id="bib8_plus"  width="12"  height="12" >&nbsp;BibTeX</a>
-          
-          <div class="bibtex" id="bib8">
-      <pre>
-@misc{MR25,
-      title={{A General Framework for Low Soundness Homomorphism Testing}}, 
-      author={Tushant Mittal and Sourya Roy},
-      year={2025},
-      eprint={2509.05871}
-    }
-    </pre></div>
-    <div class="abstract" id="abs8">
-                We introduce a general framework to design and analyze algorithms for the problem of testing homomorphisms between finite groups in the low-soundness regime.<br/>
- 
-                In this regime, we give the first constant-query tests for various families of groups. These include tests for: (i) homomorphisms between arbitrary cyclic groups, (ii) homomorphisms between any finite group and \(\mathbb{Z}_p\), (iii) automorphisms of dihedral and symmetric groups, (iv) inner automorphisms of non-abelian finite simple groups and extraspecial groups, and (v) testing linear characters of \( \mathsf{GL}_n(\mathbb{F}_q) \), and finite-dimensional Lie algebras over \(\mathbb{F}_q\). We also recover the result of Kiwi [TCS'03] for testing homomorphisms between \(\mathbb{F}_q^n\) and \(\mathbb{F}_q\). <br/><br/>
-
-Prior to this work, such tests were only known for abelian groups with a constant maximal order (such as \(\mathbb{F}_q^n\)). No tests were known for non-abelian groups. <br/><br/>
-
-As an additional corollary, our framework gives combinatorial list decoding bounds for cyclic groups with list size dependence of \(O(\varepsilon^{-2})\) (for agreement parameter \(\varepsilon\)). This improves upon the currently best-known bound of \(O(\varepsilon^{-105})\)  due to Dinur, Grigorescu, Kopparty, and Sudan [STOC'08], and Guo and Sudan [RANDOM'14].
-                </div>
-          </div>
-        </div>
-      </li>
-
-           <li>
-        <div class="post" >
-          <span class="accent icons"></span>
-          <div class="post-details">
-            <h4>  Pseudorandomness of Expander Walks via Fourier Analysis on Groups  </h4>
-              <p class = "venue"> RANDOM'25. </p> 
-              <p class = "authors">Joint work with <a href ="https://granha.github.io/">Fernando G. Jeronimo</a> and <a href ="https://sra2.github.io/souryar/">Sourya Roy</a>.</p>
-                            <a class="publinks" href="https://www.arxiv.org/abs/2507.14445"><img src="images/arxiv-logomark-small.svg" id="abs1_plus" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
-              <a class="absbutton" onclick="mytoggle('abs7')"><img src="images/plus.gif" id="abs7_plus" width="12" height="12">&nbsp;Abstract</a>&nbsp;&nbsp;
-                 <a class="absbutton" onclick="mytoggle('bib7')"><img src="images/plus.gif" id="bib7_plus"  width="12"  height="12" >&nbsp;BibTeX</a>
-          
-          <div class="bibtex" id="bib7">
-      <pre>
-@InProceedings{JMR25,
-  author =	{Jeronimo, Fernando Granha and 
-    Mittal, Tushant  and Roy, Sourya},
-  title =	{{Pseudorandomness of Expander Walks via
-     Fourier Analysis on Groups}},
-  booktitle =	{29th International Conference on
-     Randomization and Computation (RANDOM)},
-  year =	{2025},
-  eprint = {2507.14445},
-	doi = {10.4230/LIPIcs.APPROX/RANDOM.2025.49}
-}
-    </pre></div>
-              <div class="abstract" id="abs7">
-                One approach to study the pseudorandomness properties of walks on expander graphs is to label the vertices of an expander with elements from an alphabet \(\Sigma\), and study the mean of functions over \(\Sigma^n\). We say expander walks \(\varepsilon\)-fool a function if, for any unbiased labeling of the vertices, the expander walk mean is \(\varepsilon\)-close to the true mean. We show that:
-                <ul>
-<li> The class of symmetric functions is \(O(|\Sigma|\cdot\lambda)\)-fooled by expander walks over any generic \(\lambda\)-expander, and any alphabet \(\Sigma\) . This generalizes the result of Cohen, Peri, Ta-Shma [STOC'21] which analyzes it for \( |\Sigma| = 2\), and exponentially improves the previous bound of  \( O(|\Sigma|^{O(|\Sigma|)}\cdot \lambda ) \), by Golowich and Vadhan [CCC'22]. Additionally, if the expander is a Cayley graph over \(\mathbb{Z}_{|\Sigma|}\), we get a further improved bound of \(O(\sqrt{|\Sigma|}\cdot\lambda)\).</li>
-</ulul>
-Morever, when \(\Sigma\) is a finite group \(G\), we show the following for functions over \(G^n\):
-<ul>
-<li> The class of symmetric class functions is \( O(\frac{\sqrt{|G|}}{D}⋅ \lambda) \)-fooled by expander walks over "structured" \(\lambda\)-expanders, if \(G\) is \(D\)-quasirandom.</li>
-<li> We show a lower bound of \(\Omega(\lambda)\) for symmetric functions for any finite group \(G\) (even for "structured" \(\lambda\)-expanders).</li>
-<li> We study the Fourier spectrum of a class of non-symmetric functions arising from word maps, and show that they are exponentially fooled by expander walks.</li>
-</ul>
-Our proof employs Fourier analysis over general groups, which contrasts with earlier works that have studied either the case of \(\mathbb{Z}_2\) or \(\mathbb{Z}\). This enables us to get quantitatively better bounds even for unstructured sets.
-              </div>
-
-          </div>
-        </div>
-      </li>
-
-      <li>
-        <div class="post" >
-          <span class="accent icons"></span>
-          <div class="post-details">
-            <h4>  Explicit Codes approaching Generalized Singleton Bound using Expanders </h4>
-            <p class = "venue"> STOC'25 (Invited to Special Issue). </p> 
-              <p class = "authors">Joint work with <a href ="https://granha.github.io/">Fernando G. Jeronimo</a>,  <a href ="https://sites.google.com/view/shashanks">Shashank Srivastava</a>, and <a href ="https://home.ttic.edu/~madhurt/">Madhur Tulsiani</a>.</p>
-              <a class="publinks" href="https://arxiv.org/abs/2502.07308"><img src="images/arxiv-logomark-small.svg" id="abs1_plus" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
-              <a class="publinks" href="https://www.youtube.com/watch?v=8u0s2YQDUcs"><img src="images/yt_icon.svg" id="abs1_plus" width="18" height="14">&nbsp;Video (Madhur)</a>&nbsp;&nbsp;
-              <a class="absbutton" onclick="mytoggle('abs6')"><img src="images/plus.gif" id="abs6_plus" width="12" height="12">&nbsp;Abstract</a>&nbsp;&nbsp;
-               <a class="absbutton" onclick="mytoggle('bib6')"><img src="images/plus.gif" id="bib6_plus"  width="12"  height="12" >&nbsp;BibTeX</a>
-          
-          <div class="bibtex" id="bib6">
-      <pre>
-@inproceedings{JMST25,
-author = {Jeronimo, Fernando Granha and Mittal, Tushant 
-  and Srivastava, Shashank and Tulsiani, Madhur},
-title = {{Explicit Codes Approaching Generalized Singleton Bound 
-  using Expanders}},
-year = {2025},
-doi = {10.1145/3717823.3718302},
-booktitle = {Proceedings of the 57th Annual ACM 
-  Symposium on Theory of Computing (STOC)},
-eprint = {2502.07308}
-}
-    </pre></div>
-              <div class="abstract" id="abs6">
-                We construct a new family of explicit codes that are list decodable to capacity and achieve an optimal list size of \(O(\frac{1}{\varepsilon})\). In contrast to existing explicit constructions of codes achieving list decoding capacity, our arguments do not rely on algebraic structure but utilize simple combinatorial properties of expander graphs. <br/>
-Our construction is based on a celebrated distance amplification procedure due to Alon, Edmonds, and Luby [FOCS'95], which transforms any high-rate code into one with near-optimal rate-distance tradeoff. We generalize it to show that the same procedure can be used to transform any high-rate code into one that achieves list decoding capacity. Our proof can be interpreted as a "local-to-global" phenomenon for (a slight strengthening of) the generalized Singleton bound. Using this construction, for every \(R, \varepsilon \in (0,1)\) and \(k \in \mathbb{N}^+\), we obtain an <em>explicit</em> family of codes \( C \subseteq \Sigma^n \), with rate \(R\) such that,
-
-<ul>
-<li> They achieve the \(\varepsilon\)-relaxed generalized Singleton bound: for any \(g \in \Sigma^n \) and any list \(H\) of at most \(k\) codewords, we have,
-\( \mathbb{E}_{h \in H}[\Delta(g,h)] ~\geq~ \frac{|H|-1}{|H|} \cdot (1-R-\varepsilon) \).
-</li>
-<li>
- The alphabet size is a constant depending only on \(\varepsilon\) and \(k\).
-</li>
-<li>
- They can be list decoded up to radius \(\frac{k-1}{k}(1-R-\varepsilon)\), in time \(n^{O_{k,\varepsilon}(1)}\).
- </li>
-</ul>
-As a corollary of our result, we also obtain the first explicit construction of LDPC codes achieving list decoding capacity, and in fact arbitrarily close to the generalized Singleton bound.
-
-                </div>
-                
-            </div>
-        </div>
-      </li>
-      
-      <li>
-        <div class="post" >
-          <span class="accent icons"></span>
-          <div class="post-details">
-            <h4> List Decodable Quantum LDPC Codes </h4>
-            <p class = "venue"> QIP'25 (Poster). </p> 
-              <p class = "authors">Joint work with Thiago Bergamaschi, <a href ="https://granha.github.io/">Fernando G. Jeronimo</a>,  <a href ="https://sites.google.com/view/shashanks">Shashank Srivastava</a>, and <a href ="https://home.ttic.edu/~madhurt/">Madhur Tulsiani</a>.</p>
-              <a class="publinks" href="https://arxiv.org/abs/2411.04306"><img src="images/arxiv-logomark-small.svg" id="abs1_plus" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
-              <a class="publinks" href="talks/QIP_Poster.pdf" ><span class="accent icons" ><i class="fa-regular fa-file-pdf fa-xs"></i></span>Poster</a>&nbsp;&nbsp;
-              <a class="absbutton" onclick="mytoggle('abs5')"><img src="images/plus.gif" id="abs5_plus" width="12" height="12">&nbsp;Abstract</a>&nbsp;&nbsp;
-              <a class="absbutton" onclick="mytoggle('bib5')"><img src="images/plus.gif" id="bib5_plus"  width="12"  height="12" >&nbsp;BibTeX</a>
-          
-          <div class="bibtex" id="bib5">
-      <pre>
-@misc{BJMST25,
-  title = {{List Decodable Quantum LDPC Codes}},
-  author = {Bergamaschi, Thiago and Jeronimo, Fernando Granha and 
-    Mittal, Tushant and Srivastava, Shashank and Tulsiani, Madhur },
-  year = {2025},
-  note = {Quantum Information Processing (QIP) 2025 (Poster).},
-  eprint = {2411.04306}
-}
-    </pre></div>
-    <div class="abstract" id="abs5">
-                We give a construction of Quantum Low-Density Parity Check (QLDPC) codes with near-optimal rate-distance tradeoff and efficient list decoding up to the Johnson bound in polynomial time. Previous constructions of list decodable good distance quantum codes either required access to a classical side channel or were based on algebraic constructions that preclude the LDPC property. </br></br>
-Our construction relies on new algorithmic results for codes obtained via the quantum analog of the distance amplification scheme of Alon, Edmonds, and Luby [FOCS 1995]. These results are based on convex relaxations obtained using the Sum-of-Squares hierarchy, which reduce the problem of list decoding the distance amplified codes to unique decoding the starting base codes. Choosing these base codes to be the recent breakthrough constructions of good QLDPC codes with efficient unique decoders, we get efficiently list decodable QLDPC codes.
-                </div>
-          </div>
-        </div>
-      </li>
-
-       <li>
-        <div class="post" >
-          <span class="accent icons"></span>
-          <div class="post-details">
-            <h4> Expanders with Symmetry: Constructions and Applications</h4>
-            <p class = "venue"> Ph.D. Dissertation, 2024 </p> 
-              <a class="publinks" href="https://knowledge.uchicago.edu/record/12862?v=pdf"><img src="images/knowl_logo.png" id="abs1_plus" width="14" height="14">&nbsp;UChicago Repository</a>&nbsp;&nbsp; <a class="publinks" href="dissertation.pdf" ><span class="accent icons" ><i class="fa-regular fa-file-pdf fa-xs"></i></span>Dissertation</a>
-          </div>
-        </div>
-      </li>
-
-
-
-      <li>
-        <div class="post" >
-          <span class="accent icons"></span>
-          <div class="post-details">
-            <h4> <a href = "https://epubs.siam.org/doi/abs/10.1137/22M1538739"> Almost Ramanujan Expanders from Arbitrary Expanders via Operator Amplification </a></h4>
-            <p class = "venue"> FOCS'22, SICOMP'24 (Special Issue) </p>
-              <p class = "authors"> Joint work with <a href ="https://granha.github.io/">Fernando G. Jeronimo</a>, <a href ="https://sra2.github.io/souryar/">Sourya Roy</a>, <a href ="https://www.math.ias.edu/avi/home">Avi Wigderson</a>.</p>
-            <a class="publinks" href="https://arxiv.org/abs/2209.07024"><img src="images/arxiv-logomark-small.svg" id="abs1_plus" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
-            <a class="publinks" href="https://ieeexplore.ieee.org/document/9996791"><i class="fa-regular fa-file-pdf fa-xs"></i>&nbsp;Conference</a>&nbsp;&nbsp;
-            <a class="publinks" href="https://www.youtube.com/watch?v=8CkbLun5hFs"><img src="images/yt_icon.svg" id="abs1_plus" width="18" height="14">&nbsp;Video</a>&nbsp;&nbsp;
-            <a class="absbutton" onclick="mytoggle('abs4')"><img src="images/plus.gif" id="abs4_plus" width="12" height="12">&nbsp;Abstract</a>&nbsp;&nbsp;
-          <a class="absbutton" onclick="mytoggle('bib4')"><img src="images/plus.gif" id="bib4_plus"  width="12"  height="12" >&nbsp;BibTeX</a>
-          
-          <div class="bibtex" id="bib4">
-      <pre>
-  @inproceedings {JMRW22,
-    author = {Jeronimo, Fernando Granha and
-        Mittal, Tushant  and Roy, Sourya and Wigderson, Avi},
-    booktitle = 
-    {Proceedings of the 63rd IEEE 
-      Symposium on Foundations of Computer Science},
-    title = {Almost {R}amanujan {E}xpanders from
-      {A}rbitrary {E}xpanders via {O}perator {A}mplification},
-    year = {2022},
-    doi = {10.1109/FOCS54457.2022.00043},
-    eprint    = {2209.07024},
-    }
-    </pre>
-
-        </div>  
-        <div class="abstract" id="abs4">
-    
-          We give an efficient algorithm that transforms any bounded degree
-    expander graph into another that achieves almost optimal (namely,
-    near-quadratic, \(d \leq 1/\lambda^{2+o(1)}\) ) trade-off between (any
-    desired) spectral expansion $\lambda$ and degree \(d\). Furthermore, the
-    algorithm is <i>local</i>: every vertex can compute its new neighbors
-    as a subset of its original neighborhood of radius
-    \(O(\log(1/\lambda))\). The optimal quadratic trade-off is known as the
-    Ramanujan bound, so our construction gives almost Ramanujan expanders
-    from arbitrary expanders.<br/><br/>
-    
-    The locality of the transformation preserves structural properties of
-    the original graph, and thus has many consequences. Applied to Cayley
-    graphs, our transformation shows that <i>any</i> expanding finite
-    group has almost Ramanujan expanding generators. Similarly, one can
-    obtain almost optimal explicit constructions of quantum expanders,
-    dimension expanders, monotone expanders, etc., from existing
-    (suboptimal) constructions of such objects. Another consequence is a
-    "derandomized" random walk on the original (suboptimal) expander with
-    almost optimal convergence rate. Our transformation also applies when
-    the degree is not bounded or the expansion is not constant.<br/><br/>
-    
-    We obtain our results by a generalization of Ta-Shma's technique in
-    his breakthrough paper [STOC 2017], used to obtain explicit almost
-    optimal binary codes. Specifically, our spectral amplification extends
-    Ta-Shma's analysis of bias amplification from scalars to matrices of
-    arbitrary dimension in a very natural way. Curiously, while Ta-Shma's
-    explicit bias amplification derandomizes a well-known probabilistic
-    argument (underlying the Gilbert-Varshamov bound), there seems to be
-    no known probabilistic (or other existential) way of achieving our
-    explicit (``high-dimensional") spectral amplification.
-    
-    
-        </div>
-    <!---
-            <p onclick="toggle(this)"><a href="#" >Show full abstract</a></p>
-    
-            <p><a href="#" class="abstract">Show full abstract</a></p>
-            <p class = "abstracttext">  When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-      \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\] </p> <span class="accent icon-label">arXiv</span>
-    -->
-          </div>
-        </div>
-      </li>
-
-      <li>
-        <div class="post" >
-          <span class="accent icons"></span>
-          <div class="post-details">
-            <h4> <a href = "https://drops.dagstuhl.de/opus/volltexte/2022/15684/">Explicit Abelian Lifts and Quantum LDPC Codes </a> </h4>
-            <p class = "venue">ITCS'22</p>
-              <p class = "authors">Joint work with <a href ="https://granha.github.io/">Fernando G. Jeronimo</a>, <a href ="http://www.cs.cmu.edu/~odonnell/">Ryan O'Donnell</a>, <a href ="https://www.cs.cmu.edu/~preisben/">Pedro Paredes</a>, and <a href ="https://home.ttic.edu/~madhurt/">Madhur Tulsiani</a>.</p>
-            <a class="publinks" href="https://arxiv.org/abs/2112.01647"><img src="images/arxiv-logomark-small.svg" id="abs1_plus" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
-            <a class="publinks" href="https://www.youtube.com/watch?v=X-YOL_o247E"><img src="images/yt_icon.svg" id="abs1_plus" width="18" height="14">&nbsp;Video</a>&nbsp;&nbsp;
-            <a class="absbutton" onclick="mytoggle('abs3')"><img src="images/plus.gif" id="abs3_plus" width="12" height="12">&nbsp;Abstract</a>&nbsp;&nbsp;
-          <a class="absbutton" onclick="mytoggle('bib3')"><img src="images/plus.gif" id="bib3_plus"  width="12"  height="12" >&nbsp;BibTeX</a>
-          
-          <div class="bibtex" id="bib3">
-            <pre>
-  @InProceedings{JMOPT22,
-  author =	{Jeronimo, Fernando Granha and 
-    Mittal, Tushant  and
-              O'Donnell, Ryan and Paredes, Pedro and 
-              Tulsiani, Madhur},
-  title =	{{Explicit Abelian Lifts and 
-    Quantum LDPC Codes}},
-  booktitle =	{13th Innovations in Theoretical 
-    Computer Science
-                Conference (ITCS 2022)},
-  year =	{2022},
-  volume =	{215},
-  publisher =	{Schloss Dagstuhl -- 
-    Leibniz-Zentrum f{\"u}r Informatik},
-  doi =		{10.4230/LIPIcs.ITCS.2022.88},
-  eprint =      {2112.01647}
-  }
-            </pre>
-            </div>
-                <div class="abstract" id="abs3">
-            
-                  For an abelian group \(H\) acting on the set \([\ell]\), an
-                  \( (H,\ell) \)-lift of a graph \(G_0 \) is a graph obtained by replacing each
-                  vertex by \(\ell\) copies, and each edge by a matching corresponding to
-                  the action of an element of \(H\).
-                  <br/><br/>
-            
-            
-                  Expanding graphs obtained via abelian lifts, form a key ingredient in
-                  the recent breakthrough constructions of quantum LDPC codes,
-                  (implicitly) in the fiber bundle codes by Hastings, Haah and O'Donnell
-                  [STOC 2021] achieving distance \(\widetilde{\Omega}(N^{3/5})\),
-                  and in those by Panteleev and Kalachev [IEEE Trans. Inf. Theory 2021] of distance
-                  \(\Omega(N/\log(N))\).<br/><br/>
-            
-                  However, both these constructions are <i>non-explicit</i>. In
-                  particular, the latter relies on a randomized construction of expander
-                  graphs via abelian lifts by Agarwal et al. [SIAM J. Discrete Math
-                  2019].<br/><br/>
-            
-                  In this work, we show the following <i>explicit</i> constructions of
-                  expanders obtained via abelian lifts. For every (transitive) abelian
-                  group \(H \leqslant \mathrm{Sym}(\ell)\), constant degree \(d \ge 3\) and
-                  \(\epsilon > 0\), we construct explicit \(d\)-regular expander graphs \(G\)
-                  obtained from an \((H,\ell)\)-lift of a (suitable) base \(n\)-vertex
-                  expander \(G_0\) with the following parameters:<br/>
-            
-                  <ul>
-                    <li> (i) \(\lambda(G) \le 2\sqrt{d-1} + \epsilon\), for any lift size \(\ell \le 2^{n^{\delta}}\) where \(\delta=\delta(d,\epsilon)\), </li>
-                    <li>(ii) \(\lambda(G) \le \epsilon \cdot d\), for any lift size \(\ell \le 2^{n^{\delta_0}}\) for a fixed \(\delta_0 > 0\), when \(d \ge d_0(\epsilon)\), or</li>
-                    <li>(iii) \(\lambda(G) \le \widetilde{O}(\sqrt{d})\), for lift size ``exactly'' \(\ell = 2^{\Theta(n)}\).</li>
-                  </ul><br/><br/>
-            
-            
-                  As corollaries, we obtain <i>explicit</i> quantum lifted product codes
-                  of Panteleev and Kalachev of almost linear distance (and also in a
-                  wide range of parameters) and <i>explicit</i> classical quasi-cyclic
-                  LDPC codes with wide range of circulant sizes.<br/><br/>
-            
-                  Items (i) and (ii) above are obtained by extending the techniques
-                  of Mohanty,  O'Donnell and Paredes [STOC 2020] for \(2\)-lifts to much
-                  larger abelian lift sizes (as a byproduct simplifying their
-                  construction). This is done by providing a new encoding of special
-                  walks arising in the trace power method, carefully "compressing"
-                  depth-first search traversals. Result \((iii)\) is via a simpler proof
-                  of Agarwal et al. [SIAM J. Discrete Math 2019] at the expense of
-                  polylog factors in the expansion.
-            
-            
-                </div>
-          </div>
-        </div>
-      </li>
-
-      <li>
-        <div class="post" >
-          <span class="accent icons"></span>
-          <div class="post-details">
-            <h4> <a href="https://drops.dagstuhl.de/opus/volltexte/2022/15683/">Symbolic determinant identity testing and non-commutative ranks of matrix Lie algebras</a> </h4>
-            <p class="venue"> ITCS'22 </p>
-              <p class="authors"> Joint work with <a class="authors" href ="http://old.sztaki.hu/~ivanyos/">Gábor Ivanyos</a> and <a class="authors" href ="https://profiles.uts.edu.au/Youming.Qiao">Youming Qiao</a>. </p>
-            <a class="publinks" href="https://arxiv.org/abs/2109.06403"><img src="images/arxiv-logomark-small.svg" id="abs1_plus" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
-            <a class="publinks" href="https://www.youtube.com/watch?v=XxilFVyHwJk"><img src="images/yt_icon.svg" id="abs1_plus" width="18" height="14">&nbsp;Video</a>&nbsp;&nbsp;
-            <a class="absbutton" onclick="mytoggle('abs2')"><img src="images/plus.gif" id="abs2_plus" width="12" height="12">&nbsp;Abstract</a>&nbsp;&nbsp;
-          <a class="absbutton" onclick="mytoggle('bib2')"><img src="images/plus.gif" id="bib2_plus"  width="12"  height="12" >&nbsp;BibTeX</a>
-          
-          <div class="bibtex" id="bib2">
-            <pre>
-  @InProceedings{IMQ22,
-    author =	{Ivanyos, G\'{a}bor and Mittal, Tushant and Qiao,
-                Youming},
-    title =	{{Symbolic Determinant Identity Testing and
-                Non-Commutative Ranks of Matrix Lie Algebras}},
-    booktitle =	{13th Innovations in Theoretical Computer Science
-                  Conference (ITCS 2022)},
-    year =	{2022},
-    volume =	{215},
-    publisher =	{Schloss Dagstuhl -- Leibniz-Zentrum f{\"u}r Informatik},
-    url =	{https://drops.dagstuhl.de/opus/volltexte/2022/15683},
-    doi =	{10.4230/LIPIcs.ITCS.2022.87},
-    eprint =    {2109.06403}
-}
-            </pre>
-            </div>
-            <div class="abstract" id="abs2">
-              One approach to make progress on the symbolic determinant identity testing
-    (SDIT) problem is to study the structure of singular matrix spaces. After
-    settling the non-commutative rank problem (Garg--Gurvits--Oliveira--Wigderson,
-    <i>Found. Comput. Math.</i> 2020; Ivanyos--Qiao--Subrahmanyam,
-    <i>Comput. Complex.</i> 2018), a
-    natural next step is to understand singular matrix spaces whose non-commutative
-    rank is full. At present, examples of such matrix spaces are mostly sporadic,
-    so it is desirable to discover them in a more systematic way.<br/><br/>
-    
-    In this paper, we make a step towards this direction, by studying the family of matrix spaces that are closed
-    under the commutator operation, that is, matrix Lie algebras. On the one hand, we demonstrate that matrix
-    Lie algebras over the complex number field give rise to singular matrix spaces
-    with full non-commutative ranks. On the other hand, we show that SDIT of such
-    spaces can be decided in deterministic polynomial time. Moreover, we give a
-    characterization for the matrix Lie algebras to yield a matrix space possessing
-    singularity certificates as studied by Lovász(<i>B. Braz. Math. Soc.</i>, 1989) and Raz and Wigderson (<i>Building Bridges II</i>, 2019).
-        </div>
-    
-    
-          </div>
-        </div>
-      </li>
-
-
-      <li>
-            <div class="post"  >
-              <span class="accent icons"></span>
-              <div class="post-details">
-                <h4> <a href = "https://link.springer.com/article/10.1007/s40993-018-0112-3">The Mahler measure for arbitrary tori </a> </h4>
-                <p class="authors"> Research in Number Theory '18. </br> Joint work with <a href ="https://dms.umontreal.ca/~mlalin/"> Matilde Lalín </a>.</p>
-                <a class="publinks" href="https://arxiv.org/abs/1708.02466"><img src="images/arxiv-logomark-small.svg" id="abs1_plus" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
-                <a class="absbutton" onclick="mytoggle('abs1')"><img src="images/plus.gif" id="abs1_plus" width="12" height="12">&nbsp;Abstract</a>&nbsp;&nbsp;
-                  <a class="absbutton" onclick="mytoggle('bib1')"><img src="images/plus.gif" id="bib1_plus"  width="12"  height="12" >&nbsp;BibTeX</a><br />
-                  <br/>
-    
-                  <div class="bibtex" id="bib1">
-                  <pre>
-      @article{LM18,
-        doi = {10.1007/s40993-018-0112-3},
-        url = {https://doi.org/10.1007/s40993-018-0112-3},
-        year = {2018},
-        month = Mar,
-        publisher = {Springer Science and Business Media {LLC}},
-        volume = {4},
-        number = {2},
-        author = {Matilde Lal{\'{\i}}n and Tushant Mittal},
-        title = {The Mahler measure for arbitrary tori},
-        journal = {Research in Number Theory},
-        eprint = {1708.02466}
-    }
-                  </pre>
-                  </div>
-                  <div class="abstract" id="abs1">
-    We consider a variation of the Mahler measure where the defining integral is performed over a more general torus.
-     We focus our investigation on two particular polynomials related to certain elliptic curve \(E\) and we establish new formulas for this variation of the Mahler measure in terms of \(L'(E,0)\).
-              </div>
-    
-    
-            </a>
-          </li>
-    
-
-          
-
-
-     
+       <a class="post" href="publications.html">
+         <span class="accent icons"><i class="fa-solid fa-people-carry-box"></i></span>
+         <div class="post-details">
+           <h2>Research Publications</h2>
+         </div>
+       </a>
+     </li>
 
      <li>
-      <div class="post">
+      <a class="post" href="readings.html">
         <span class="accent icons"><i class="fa-solid fa-note-sticky"></i></span>
         <div class="post-details">
-          <h2>Expository articles</h2>
-          <p class="excerpt"> Recent surveys and expositions. For a complete list, click <a style="color:#f22939" href ="readings.html"> here. </a> </p>
+          <h2>Expository Notes</h2>
         </div>
       </a>
-    </li>
-
-
-
-    <li>
-      <div class="post">
-        <span class="accent icons"></span>
-        <div class="post-details">
-          <a href="readings/qldpc.pdf" ><h4> Quantum LDPC Codes: An exposition of recent results </h4></a>
-          <p class="authors"> My Master's Thesis! </br> 
-            <b>Note </b> - This is a working draft and an update with newer results is coming soon.
-           </p>
-      </div>
-      </div>
-    </li>
-  
-    <li>
-      <div class="post">
-        <span class="accent icons"></span>
-        <div class="post-details">
-          <a href="readings/tali.pdf" ><h4> HDX — Notes on Trickle-Down and Random Walks </h4></a>
-          <p class="authors">Notes on a pair of lectures by Tali Kaufman at the 2022 Summer School on <a href="https://sites.cs.ucsb.edu/~vigoda/School/"><i>New tools for optimal mixing of Markov chains: Spectral independence and entropy decay</i></a>. 
-          </br>
-          <b> Thanks </b> - To <a href="https://sites.cs.ucsb.edu/~vigoda/">Eric</a> and <a href="https://www.cs.rochester.edu/~stefanko/">Daniel</a> for proofreading and improving the presentation.
-           </p>
-      </div>
-      </div>
-    </li>
-  
-    
-    <li>
-      <div class="post">
-        <span class="accent icons"></span>
-        <div class="post-details">
-          <a href="https://theory-reading-group.ttic.edu" ><h4> Random Matrix Theory — Matrix (Expander) Chernoff Bound </h4></a>
-          <p class="authors">Notes based on the talks given at the TTIC/UChicago reading group on random matrix theory.</p>
-      </div>
-      </div>
     </li>
 
 
@@ -739,20 +125,10 @@ Our construction relies on new algorithmic results for codes obtained via the qu
           <span class="accent icons"><i class="fa-solid fa-file-powerpoint"></i></span>
           <div class="post-details">
             <h2>Talks</h2>
-            <p class="excerpt">Slides of the talks given.</p>
           </div>
         </a>
       </li>
 
-      <li>
-       <a class="post" href="projects.html">
-         <span class="accent icons"><i class="fa-solid fa-dumpster-fire"></i></span>
-         <div class="post-details">
-           <h2>Undergrad Projects</h2>
-           <p class="excerpt">Reports and files of the projects undertaken during undergrad.</p>
-         </div>
-       </a>
-      </li>
    <!---
      
     <li>
@@ -782,7 +158,7 @@ Our construction relies on new algorithmic results for codes obtained via the qu
           <span class="accent icons"><i class="fa-solid fa-copyright"></i></span>
           <div class="post-details">
             <h2>Credits</h2>
-            <p class="excerpt">This site design is "inspired" (read, completely ripped off) from the blog of Yefim Vedernikoff. <!-- The animated 't' was created using the Animated Letters plugin created by Luis Manuel. -->
+            <p class="excerpt">This site design is "inspired" (read, completely ripped off) from the blog of Yefim Vedernikoff. The animated 't' was created using the Animated Letters plugin created by Luis Manuel.
             </p>
           </div>
         </div>

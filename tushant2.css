@@ -562,3 +562,112 @@ svg {
       flex-shrink: 0; }
 
       /* Animated t */
+
+/* Homepage: animated monogram and a portrait beside the bio. */
+.home-page main {
+  width: 736px;
+  padding: 64px 0 40px; }
+
+.home-page .post {
+  margin-bottom: 24px; }
+
+.home-page .post-details {
+  width: 598px; }
+
+.home-page .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 232px; }
+
+.home-page .under {
+  position: static;
+  width: auto;
+  margin: 0; }
+
+.home-page .bio {
+  display: flow-root; }
+
+.home-page .bio .excerpt + .excerpt {
+  margin-top: 12px; }
+
+.home-page .bio-portrait,
+.home-page .mobile-portrait {
+  width: 136px;
+  height: 156px;
+  object-fit: cover;
+  border-radius: 6px; }
+
+.home-page .bio-portrait {
+  float: right;
+  margin: 0 0 12px 24px; }
+
+.home-page .mobile-portrait {
+  display: none; }
+
+@media only screen and (max-width: 1080px) {
+  .home-page .logo {
+    flex-direction: row;
+    align-items: center;
+    width: 736px;
+    margin: 0 auto;
+    padding: 28px 0 0; }
+
+  .home-page main {
+    padding-top: 28px; }
+}
+
+@media only screen and (max-width: 780px) {
+  .home-page .logo {
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr) 80px;
+    gap: 12px;
+    width: 100%;
+    padding: 28px 16px 0; }
+
+  .home-page .t {
+    width: 48px;
+    height: 64px; }
+
+  .home-page .t svg {
+    width: 78px;
+    height: 64px; }
+
+  .home-page h1 {
+    font-size: 18px; }
+
+  .home-page .social a {
+    margin-right: 12px; }
+
+  .home-page .social a:last-child {
+    margin-right: 0; }
+
+  .home-page .mobile-portrait {
+    display: block;
+    width: 80px;
+    height: 92px; }
+
+  .home-page .bio-portrait {
+    display: none; }
+
+  .home-page main {
+    width: 100%;
+    padding: 28px 16px; }
+
+  .home-page .post {
+    flex-direction: row;
+    gap: 16px; }
+
+  .home-page .post > .icons {
+    order: 0;
+    width: 28px;
+    margin: 4px 0 0;
+    text-align: center;
+    font-size: 21px; }
+
+  .home-page .post-details {
+    width: auto;
+    min-width: 0;
+    flex: 1; }
+}

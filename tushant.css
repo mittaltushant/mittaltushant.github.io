@@ -313,6 +313,58 @@ h2 {
   font-weight: 600;
   line-height: 1.73; }
 
+.project-title {
+  color: #242525;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.73; }
+
+.undergraduate-notes > summary {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  column-gap: 66px;
+  align-items: center;
+  margin: 0 0 24px;
+  cursor: pointer;
+  list-style: none; }
+
+.undergraduate-notes > summary::-webkit-details-marker {
+  display: none; }
+
+.undergraduate-notes > summary h2 {
+  margin: 0; }
+
+.undergraduate-section-icon {
+  font-size: 25px;
+  line-height: 1.4;
+  text-align: right; }
+
+.undergraduate-toggle {
+  font-size: 12px;
+  margin-left: 6px;
+  text-align: center; }
+
+.undergraduate-notes[open] > summary .undergraduate-toggle {
+  transform: rotate(90deg); }
+
+.undergraduate-notes .post {
+  margin-bottom: 20px; }
+
+.undergraduate-notes .fixed-date {
+  width: 110px;
+  margin-top: 2px;
+  line-height: 1.73;
+  white-space: nowrap; }
+
+@media only screen and (max-width: 700px) {
+  .undergraduate-notes > summary {
+    grid-template-columns: 28px minmax(0, 1fr);
+    column-gap: 12px; }
+  .undergraduate-notes .fixed-date {
+    width: auto; }
+}
+
 h4 {
     font-size: 15px;
     font-weight: 600;
@@ -415,6 +467,18 @@ main {
       text-align: left;
       width: auto; } }
 
+.nowrap {
+  white-space: nowrap; }
+
+h2 .icons,
+h3 .icons,
+h4 .icons {
+  font-size: .875em;
+  line-height: 1;
+  margin: 0 2px;
+  vertical-align: baseline;
+  width: auto; }
+
 .date {
   font-size: 10px;
   font-weight: 400;
@@ -444,6 +508,32 @@ main {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; } }
+
+.post.publication-section-heading {
+  margin-bottom: 16px; }
+
+.publication-venue {
+  color: grey;
+  width: 126px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.73; }
+
+.publication-venue .venue-event {
+  display: block; }
+
+.publication-venue .venue-event + .venue-event {
+  margin-top: 8px; }
+
+.publication-venue a:hover,
+.publication-venue a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 3px; }
+
+@media only screen and (max-width: 700px) {
+  .publication-venue {
+    width: auto; }
+}
 
 .post-details {
   width: 598px; }
@@ -541,6 +631,37 @@ hr {
       margin: 0 0 0 22px;
       padding: 0 68px 0 0; } }
 
+.logo.logo-internal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 232px;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+.logo-internal svg {
+  display: block; }
+
+.logo-internal .under-small {
+  position: static;
+  width: auto;
+  margin: 0;
+  padding: 0; }
+
+.logo-internal .back {
+  position: static;
+  margin: 14px 0 0; }
+
+@media only screen and (max-width: 1080px) {
+  .logo.logo-internal {
+    gap: 12px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 16px 24px; }
+}
+
 article {
   font-size: 16px;
   line-height: 1.73;
@@ -626,6 +747,10 @@ svg {
 
       /* From Josh's website */
 .absbutton{
+        background:none;
+        border:0;
+        padding:0;
+        font:inherit;
         cursor:pointer;
         color:grey;
         font-size: 14px;
@@ -648,7 +773,10 @@ svg {
   margin:0;
   margin-left:10px;
   border:1px dashed #9ac0cd;
-  width:600px;
+  width:calc(100% - 10px);
+  max-width:100%;
+  overflow-x:auto;
+  overflow-wrap:anywhere;
   padding:10px;
   background-color:#e5ecf9;
   font-size: 14px;
@@ -676,11 +804,18 @@ svg {
   margin:0;
   margin-left:4px;
   border:1px dashed #9ac0cd;
-  width:600px;
+  width:calc(100% - 4px);
+  max-width:100%;
+  overflow-x:auto;
   padding:4px;
   background-color:#e5ecf9;
 /*  white-space:pre;
   family:monospace;*/
+}
+
+.bibtex pre {
+  white-space:pre-wrap;
+  overflow-wrap:anywhere;
 }
 
 .problem {
