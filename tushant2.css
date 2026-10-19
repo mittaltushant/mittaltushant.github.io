@@ -596,14 +596,42 @@ svg {
   font-weight: 500; }
 
 .home-page main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   width: 736px;
   padding: 64px 0 40px; }
 
 .home-page .post {
+  justify-content: flex-end;
+  column-gap: 20px;
   margin-bottom: 24px; }
+
+.home-page .post > .icons {
+  margin-right: 0;
+  font-size: 22px; }
+
+.home-page .post > .icons > i {
+  width: 1.25em;
+  text-align: center; }
 
 .home-page .post-details {
   width: 598px; }
+
+.home-page .site-credits {
+  margin: auto 0 0 138px;
+  padding-top: 14px;
+  border-top: 1px solid #e5e5e5;
+  color: #595959;
+  font-size: 12px;
+  line-height: 1.6; }
+
+.home-page .site-credits p {
+  margin: 0; }
+
+.home-page .site-credits a {
+  text-decoration: underline;
+  text-underline-offset: 2px; }
 
 .home-page .logo {
   display: grid;
@@ -662,6 +690,7 @@ svg {
     padding: 28px 0 0; }
 
   .home-page main {
+    min-height: auto;
     padding-top: 28px; }
 }
 
@@ -712,7 +741,7 @@ svg {
 
   .home-page .post {
     flex-direction: row;
-    gap: 16px; }
+    gap: 20px; }
 
   .home-page .post > .icons {
     order: 0;
@@ -725,4 +754,7 @@ svg {
     width: auto;
     min-width: 0;
     flex: 1; }
+
+  .home-page .site-credits {
+    margin-left: 48px; }
 }

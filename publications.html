@@ -41,7 +41,7 @@
   <link rel="canonical" href="https://mittaltushant.com/publications.html">
 
   <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Libre+Baskerville:400,400i,700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="tushant.css?v=20261018-smaller-page-titles">
+  <link rel="stylesheet" href="tushant.css?v=20261018-publication-type-scale">
 
   <link rel="stylesheet" href="academicons-1.9.1/css/academicons.min.css"/>
   <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
@@ -61,7 +61,7 @@ function mytoggle(id) {
   var expanded = button.getAttribute("aria-expanded") !== "true";
   elem.style.display = expanded ? "block" : "none";
   button.setAttribute("aria-expanded", String(expanded));
-  theplus.src = expanded ? "images/minus.gif" : "images/plus.gif";
+  theplus.src = expanded ? "images/minus-outline.svg" : "images/plus-outline.svg";
 }
 </script>
 
@@ -112,8 +112,8 @@ function mytoggle(id) {
             <h4> Random Quantum LDPC Codes Approaching the Gilbert–Varshamov Bound </h4>
               <p class = "authors">Joint work with <a href ="https://sites.google.com/view/shashanks/home">Shashank Srivastava</a>, <a href ="https://home.ttic.edu/~madhurt/">Madhur Tulsiani</a>, and <a href ="https://sites.google.com/site/marywootters/">Mary Wootters</a>.</p>
               <a class="publinks" href="https://arxiv.org/abs/2610.02648"><img src="images/arxiv-logomark-small.svg" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
-              <button class="absbutton" type="button" onclick="mytoggle('abs11')" aria-controls="abs11" aria-expanded="false"><img src="images/plus.gif" id="abs11_plus" width="12" height="12" alt="" aria-hidden="true">&nbsp;Abstract</button>&nbsp;&nbsp;
-              <button class="absbutton" type="button" onclick="mytoggle('bib11')" aria-controls="bib11" aria-expanded="false"><img src="images/plus.gif" id="bib11_plus"  width="12"  height="12"  alt="" aria-hidden="true">&nbsp;BibTeX</button>
+              <button class="absbutton" type="button" onclick="mytoggle('abs11')" aria-controls="abs11" aria-expanded="false"><img src="images/plus-outline.svg" id="abs11_plus" width="12" height="12" alt="" aria-hidden="true">&nbsp;Abstract</button>&nbsp;&nbsp;
+              <button class="absbutton" type="button" onclick="mytoggle('bib11')" aria-controls="bib11" aria-expanded="false"><img src="images/plus-outline.svg" id="bib11_plus"  width="12"  height="12"  alt="" aria-hidden="true">&nbsp;BibTeX</button>
           <div class="bibtex" id="bib11">
             <pre>
 @misc{MSTW26,
@@ -142,8 +142,8 @@ Our random ensemble is constructed by starting with these low-degeneracy QLDPC c
             <h4> Low Soundness Linearity Testing on the Half-Slice  </h4>
               <p class = "authors">Joint work with Haakon Larsen, <a href ="https://www.cs.ucr.edu/~silas/">Silas Richelson</a>, and <a href ="https://sra2.github.io/souryar/">Sourya Roy</a>.</p>
               <a class="publinks" href="https://arxiv.org/abs/2605.26450"><img src="images/arxiv-logomark-small.svg" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
-              <button class="absbutton" type="button" onclick="mytoggle('abs10')" aria-controls="abs10" aria-expanded="false"><img src="images/plus.gif" id="abs10_plus" width="12" height="12" alt="" aria-hidden="true">&nbsp;Abstract</button>&nbsp;&nbsp;
-              <button class="absbutton" type="button" onclick="mytoggle('bib10')" aria-controls="bib10" aria-expanded="false"><img src="images/plus.gif" id="bib10_plus"  width="12"  height="12"  alt="" aria-hidden="true">&nbsp;BibTeX</button>
+              <button class="absbutton" type="button" onclick="mytoggle('abs10')" aria-controls="abs10" aria-expanded="false"><img src="images/plus-outline.svg" id="abs10_plus" width="12" height="12" alt="" aria-hidden="true">&nbsp;Abstract</button>&nbsp;&nbsp;
+              <button class="absbutton" type="button" onclick="mytoggle('bib10')" aria-controls="bib10" aria-expanded="false"><img src="images/plus-outline.svg" id="bib10_plus"  width="12"  height="12"  alt="" aria-hidden="true">&nbsp;BibTeX</button>
           <div class="bibtex" id="bib10">
       <pre>
 @misc{LMRR26,
@@ -172,8 +172,8 @@ Our main technical contribution is a new dense model theorem using bounds on Kra
             <h4>  Derandomized Non-Abelian Homomorphism Testing in Low Soundness Regime </h4>
               <p class = "authors">Joint work with <a href ="https://sra2.github.io/souryar/">Sourya Roy</a>.</p>
               <a class="publinks" href="https://arxiv.org/abs/2405.18998"><img src="images/arxiv-logomark-small.svg" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
-              <button class="absbutton" type="button" onclick="mytoggle('abs9')" aria-controls="abs9" aria-expanded="false"><img src="images/plus.gif" id="abs9_plus" width="12" height="12" alt="" aria-hidden="true">&nbsp;Abstract</button>&nbsp;&nbsp;
-              <button class="absbutton" type="button" onclick="mytoggle('bib9')" aria-controls="bib9" aria-expanded="false"><img src="images/plus.gif" id="bib9_plus"  width="12"  height="12"  alt="" aria-hidden="true">&nbsp;BibTeX</button>
+              <button class="absbutton" type="button" onclick="mytoggle('abs9')" aria-controls="abs9" aria-expanded="false"><img src="images/plus-outline.svg" id="abs9_plus" width="12" height="12" alt="" aria-hidden="true">&nbsp;Abstract</button>&nbsp;&nbsp;
+              <button class="absbutton" type="button" onclick="mytoggle('bib9')" aria-controls="bib9" aria-expanded="false"><img src="images/plus-outline.svg" id="bib9_plus"  width="12"  height="12"  alt="" aria-hidden="true">&nbsp;BibTeX</button>
           
           <div class="bibtex" id="bib9">
       <pre>
@@ -194,7 +194,7 @@ In the full randomness regime, such a test for matrix-valued functions on finite
 
      
 
-      <li>
+      <li class="publication-section-start">
         <div class="post publication-section-heading">
           <span class="accent icons"><i class="fa-solid fa-people-carry-box"></i></span>
           <div class="post-details">
@@ -209,10 +209,10 @@ In the full randomness regime, such a test for matrix-valued functions on finite
             <h4>  A General Framework for Low Soundness Homomorphism Testing </h4> 
               <p class = "authors">Joint work with <a href ="https://sra2.github.io/souryar/">Sourya Roy</a>.</p>
               <a class="publinks" href="https://arxiv.org/abs/2509.05871"><img src="images/arxiv-logomark-small.svg" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
-              <a class="publinks" href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ITCS.2026.103"><i class="fa-regular fa-file-pdf fa-xs" aria-hidden="true"></i>&nbsp;Conference</a>&nbsp;&nbsp;
-              <a class="publinks" href="https://www.youtube.com/watch?v=j1fNF8hQfCI"><img src="images/yt_icon.svg" width="18" height="14">&nbsp;Video</a>&nbsp;&nbsp;
-              <button class="absbutton" type="button" onclick="mytoggle('abs8')" aria-controls="abs8" aria-expanded="false"><img src="images/plus.gif" id="abs8_plus" width="12" height="12" alt="" aria-hidden="true">&nbsp;Abstract</button>&nbsp;&nbsp;
-              <button class="absbutton" type="button" onclick="mytoggle('bib8')" aria-controls="bib8" aria-expanded="false"><img src="images/plus.gif" id="bib8_plus"  width="12"  height="12"  alt="" aria-hidden="true">&nbsp;BibTeX</button>
+              <a class="publinks" href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ITCS.2026.103"><i class="fa-regular fa-file-pdf fa-xs accent" aria-hidden="true"></i>&nbsp;Conference</a>&nbsp;&nbsp;
+              <a class="publinks" href="https://www.youtube.com/watch?v=j1fNF8hQfCI"><img src="images/video-outline.svg" width="14" height="11" alt="" aria-hidden="true">&nbsp;Video</a>&nbsp;&nbsp;
+              <button class="absbutton" type="button" onclick="mytoggle('abs8')" aria-controls="abs8" aria-expanded="false"><img src="images/plus-outline.svg" id="abs8_plus" width="12" height="12" alt="" aria-hidden="true">&nbsp;Abstract</button>&nbsp;&nbsp;
+              <button class="absbutton" type="button" onclick="mytoggle('bib8')" aria-controls="bib8" aria-expanded="false"><img src="images/plus-outline.svg" id="bib8_plus"  width="12"  height="12"  alt="" aria-hidden="true">&nbsp;BibTeX</button>
           
           <div class="bibtex" id="bib8">
       <pre>
@@ -251,9 +251,9 @@ As an additional corollary, our framework gives combinatorial list decoding boun
             <h4>  Pseudorandomness of Expander Walks via Fourier Analysis on Groups  </h4> 
               <p class = "authors">Joint work with <a href ="https://granha.github.io/">Fernando G. Jeronimo</a> and <a href ="https://sra2.github.io/souryar/">Sourya Roy</a>.</p>
                             <a class="publinks" href="https://www.arxiv.org/abs/2507.14445"><img src="images/arxiv-logomark-small.svg" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
-              <a class="publinks" href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.APPROX/RANDOM.2025.49"><i class="fa-regular fa-file-pdf fa-xs" aria-hidden="true"></i>&nbsp;Conference</a>&nbsp;&nbsp;
-              <button class="absbutton" type="button" onclick="mytoggle('abs7')" aria-controls="abs7" aria-expanded="false"><img src="images/plus.gif" id="abs7_plus" width="12" height="12" alt="" aria-hidden="true">&nbsp;Abstract</button>&nbsp;&nbsp;
-                 <button class="absbutton" type="button" onclick="mytoggle('bib7')" aria-controls="bib7" aria-expanded="false"><img src="images/plus.gif" id="bib7_plus"  width="12"  height="12"  alt="" aria-hidden="true">&nbsp;BibTeX</button>
+              <a class="publinks" href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.APPROX/RANDOM.2025.49"><i class="fa-regular fa-file-pdf fa-xs accent" aria-hidden="true"></i>&nbsp;Conference</a>&nbsp;&nbsp;
+              <button class="absbutton" type="button" onclick="mytoggle('abs7')" aria-controls="abs7" aria-expanded="false"><img src="images/plus-outline.svg" id="abs7_plus" width="12" height="12" alt="" aria-hidden="true">&nbsp;Abstract</button>&nbsp;&nbsp;
+                 <button class="absbutton" type="button" onclick="mytoggle('bib7')" aria-controls="bib7" aria-expanded="false"><img src="images/plus-outline.svg" id="bib7_plus"  width="12"  height="12"  alt="" aria-hidden="true">&nbsp;BibTeX</button>
           
           <div class="bibtex" id="bib7">
       <pre>
@@ -295,10 +295,10 @@ Our proof employs Fourier analysis over general groups, which contrasts with ear
             <p class="venue">Accepted for SICOMP Special Issue.</p> 
               <p class = "authors">Joint work with <a href ="https://granha.github.io/">Fernando G. Jeronimo</a>,  <a href ="https://sites.google.com/view/shashanks">Shashank Srivastava</a>, and <a href ="https://home.ttic.edu/~madhurt/">Madhur Tulsiani</a>.</p>
               <a class="publinks" href="https://arxiv.org/abs/2502.07308"><img src="images/arxiv-logomark-small.svg" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
-              <a class="publinks" href="https://dl.acm.org/doi/10.1145/3717823.3718302"><i class="fa-regular fa-file-pdf fa-xs" aria-hidden="true"></i>&nbsp;Conference</a>&nbsp;&nbsp;
-              <a class="publinks" href="https://www.youtube.com/watch?v=8u0s2YQDUcs"><img src="images/yt_icon.svg" width="18" height="14">&nbsp;Video (Madhur)</a>&nbsp;&nbsp;
-              <button class="absbutton" type="button" onclick="mytoggle('abs6')" aria-controls="abs6" aria-expanded="false"><img src="images/plus.gif" id="abs6_plus" width="12" height="12" alt="" aria-hidden="true">&nbsp;Abstract</button>&nbsp;&nbsp;
-               <button class="absbutton" type="button" onclick="mytoggle('bib6')" aria-controls="bib6" aria-expanded="false"><img src="images/plus.gif" id="bib6_plus"  width="12"  height="12"  alt="" aria-hidden="true">&nbsp;BibTeX</button>
+              <a class="publinks" href="https://dl.acm.org/doi/10.1145/3717823.3718302"><i class="fa-regular fa-file-pdf fa-xs accent" aria-hidden="true"></i>&nbsp;Conference</a>&nbsp;&nbsp;
+              <a class="publinks" href="https://www.youtube.com/watch?v=8u0s2YQDUcs"><img src="images/video-outline.svg" width="14" height="11" alt="" aria-hidden="true">&nbsp;Video (Madhur)</a>&nbsp;&nbsp;
+              <button class="absbutton" type="button" onclick="mytoggle('abs6')" aria-controls="abs6" aria-expanded="false"><img src="images/plus-outline.svg" id="abs6_plus" width="12" height="12" alt="" aria-hidden="true">&nbsp;Abstract</button>&nbsp;&nbsp;
+               <button class="absbutton" type="button" onclick="mytoggle('bib6')" aria-controls="bib6" aria-expanded="false"><img src="images/plus-outline.svg" id="bib6_plus"  width="12"  height="12"  alt="" aria-hidden="true">&nbsp;BibTeX</button>
           
           <div class="bibtex" id="bib6">
       <pre>
@@ -344,9 +344,9 @@ As a corollary of our result, we also obtain the first explicit construction of 
             <h4> List Decodable Quantum LDPC Codes </h4>
               <p class = "authors">Joint work with Thiago Bergamaschi, <a href ="https://granha.github.io/">Fernando G. Jeronimo</a>,  <a href ="https://sites.google.com/view/shashanks">Shashank Srivastava</a>, and <a href ="https://home.ttic.edu/~madhurt/">Madhur Tulsiani</a>.</p>
               <a class="publinks" href="https://arxiv.org/abs/2411.04306"><img src="images/arxiv-logomark-small.svg" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
-              <a class="publinks" href="talks/QIP_Poster.pdf" ><span class="accent icons" ><i class="fa-regular fa-file-pdf fa-xs"></i></span>Poster</a>&nbsp;&nbsp;
-              <button class="absbutton" type="button" onclick="mytoggle('abs5')" aria-controls="abs5" aria-expanded="false"><img src="images/plus.gif" id="abs5_plus" width="12" height="12" alt="" aria-hidden="true">&nbsp;Abstract</button>&nbsp;&nbsp;
-              <button class="absbutton" type="button" onclick="mytoggle('bib5')" aria-controls="bib5" aria-expanded="false"><img src="images/plus.gif" id="bib5_plus"  width="12"  height="12"  alt="" aria-hidden="true">&nbsp;BibTeX</button>
+              <a class="publinks" href="talks/QIP_Poster.pdf" ><i class="fa-regular fa-file-pdf fa-xs accent" aria-hidden="true"></i>&nbsp;Poster</a>&nbsp;&nbsp;
+              <button class="absbutton" type="button" onclick="mytoggle('abs5')" aria-controls="abs5" aria-expanded="false"><img src="images/plus-outline.svg" id="abs5_plus" width="12" height="12" alt="" aria-hidden="true">&nbsp;Abstract</button>&nbsp;&nbsp;
+              <button class="absbutton" type="button" onclick="mytoggle('bib5')" aria-controls="bib5" aria-expanded="false"><img src="images/plus-outline.svg" id="bib5_plus"  width="12"  height="12"  alt="" aria-hidden="true">&nbsp;BibTeX</button>
           
           <div class="bibtex" id="bib5">
       <pre>
@@ -372,7 +372,7 @@ Our construction relies on new algorithmic results for codes obtained via the qu
           <span class="accent lhs publication-venue">Ph.D.<br>2024</span>
           <div class="post-details">
             <h4> Expanders with Symmetry: Constructions and Applications</h4>
-              <a class="publinks" href="https://knowledge.uchicago.edu/record/12862?v=pdf"><img src="images/knowl_logo.png" width="14" height="14">&nbsp;UChicago Repository</a>&nbsp;&nbsp; <a class="publinks" href="dissertation.pdf" ><span class="accent icons" ><i class="fa-regular fa-file-pdf fa-xs"></i></span>Dissertation</a>&nbsp;&nbsp; <a class="publinks" href="talks/Thesis%20Defense.pdf"><span class="accent icons"><i class="fa-regular fa-file-pdf fa-xs" aria-hidden="true"></i></span>Defense slides</a>
+              <a class="publinks" href="https://knowledge.uchicago.edu/record/12862?v=pdf"><img src="images/knowl_logo.png" width="14" height="14">&nbsp;UChicago Repository</a>&nbsp;&nbsp; <a class="publinks" href="dissertation.pdf" ><i class="fa-regular fa-file-pdf fa-xs accent" aria-hidden="true"></i>&nbsp;Dissertation</a>&nbsp;&nbsp; <a class="publinks" href="talks/Thesis%20Defense.pdf"><i class="fa-regular fa-file-pdf fa-xs accent" aria-hidden="true"></i>&nbsp;Defense slides</a>
           </div>
         </div>
       </li>
@@ -386,11 +386,11 @@ Our construction relies on new algorithmic results for codes obtained via the qu
             <h4> Almost Ramanujan Expanders from Arbitrary Expanders via Operator Amplification </h4>
               <p class = "authors"> Joint work with <a href ="https://granha.github.io/">Fernando G. Jeronimo</a>, <a href ="https://sra2.github.io/souryar/">Sourya Roy</a>, and <a href ="https://www.math.ias.edu/avi/home">Avi Wigderson</a>.</p>
             <a class="publinks" href="https://arxiv.org/abs/2209.07024"><img src="images/arxiv-logomark-small.svg" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
-            <a class="publinks" href="https://ieeexplore.ieee.org/document/9996791"><i class="fa-regular fa-file-pdf fa-xs"></i>&nbsp;Conference</a>&nbsp;&nbsp;
-            <a class="publinks" href="https://epubs.siam.org/doi/abs/10.1137/22M1538739"><i class="fa-regular fa-file-pdf fa-xs" aria-hidden="true"></i>&nbsp;Journal</a>&nbsp;&nbsp;
-            <a class="publinks" href="https://www.youtube.com/watch?v=8CkbLun5hFs"><img src="images/yt_icon.svg" width="18" height="14">&nbsp;Video</a>&nbsp;&nbsp;
-            <button class="absbutton" type="button" onclick="mytoggle('abs4')" aria-controls="abs4" aria-expanded="false"><img src="images/plus.gif" id="abs4_plus" width="12" height="12" alt="" aria-hidden="true">&nbsp;Abstract</button>&nbsp;&nbsp;
-          <button class="absbutton" type="button" onclick="mytoggle('bib4')" aria-controls="bib4" aria-expanded="false"><img src="images/plus.gif" id="bib4_plus"  width="12"  height="12"  alt="" aria-hidden="true">&nbsp;BibTeX</button>
+            <a class="publinks" href="https://ieeexplore.ieee.org/document/9996791"><i class="fa-regular fa-file-pdf fa-xs accent" aria-hidden="true"></i>&nbsp;Conference</a>&nbsp;&nbsp;
+            <a class="publinks" href="https://epubs.siam.org/doi/abs/10.1137/22M1538739"><i class="fa-regular fa-file-pdf fa-xs accent" aria-hidden="true"></i>&nbsp;Journal</a>&nbsp;&nbsp;
+            <a class="publinks" href="https://www.youtube.com/watch?v=8CkbLun5hFs"><img src="images/video-outline.svg" width="14" height="11" alt="" aria-hidden="true">&nbsp;Video</a>&nbsp;&nbsp;
+            <button class="absbutton" type="button" onclick="mytoggle('abs4')" aria-controls="abs4" aria-expanded="false"><img src="images/plus-outline.svg" id="abs4_plus" width="12" height="12" alt="" aria-hidden="true">&nbsp;Abstract</button>&nbsp;&nbsp;
+          <button class="absbutton" type="button" onclick="mytoggle('bib4')" aria-controls="bib4" aria-expanded="false"><img src="images/plus-outline.svg" id="bib4_plus"  width="12"  height="12"  alt="" aria-hidden="true">&nbsp;BibTeX</button>
           
           <div class="bibtex" id="bib4">
       <pre>
@@ -462,10 +462,10 @@ Our construction relies on new algorithmic results for codes obtained via the qu
             <h4> Explicit Abelian Lifts and Quantum LDPC Codes </h4>
               <p class = "authors">Joint work with <a href ="https://granha.github.io/">Fernando G. Jeronimo</a>, <a href ="http://www.cs.cmu.edu/~odonnell/">Ryan O'Donnell</a>, <a href ="https://www.cs.cmu.edu/~preisben/">Pedro Paredes</a>, and <a href ="https://home.ttic.edu/~madhurt/">Madhur Tulsiani</a>.</p>
             <a class="publinks" href="https://arxiv.org/abs/2112.01647"><img src="images/arxiv-logomark-small.svg" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
-              <a class="publinks" href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ITCS.2022.88"><i class="fa-regular fa-file-pdf fa-xs" aria-hidden="true"></i>&nbsp;Conference</a>&nbsp;&nbsp;
-            <a class="publinks" href="https://www.youtube.com/watch?v=X-YOL_o247E"><img src="images/yt_icon.svg" width="18" height="14">&nbsp;Video</a>&nbsp;&nbsp;
-            <button class="absbutton" type="button" onclick="mytoggle('abs3')" aria-controls="abs3" aria-expanded="false"><img src="images/plus.gif" id="abs3_plus" width="12" height="12" alt="" aria-hidden="true">&nbsp;Abstract</button>&nbsp;&nbsp;
-          <button class="absbutton" type="button" onclick="mytoggle('bib3')" aria-controls="bib3" aria-expanded="false"><img src="images/plus.gif" id="bib3_plus"  width="12"  height="12"  alt="" aria-hidden="true">&nbsp;BibTeX</button>
+              <a class="publinks" href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ITCS.2022.88"><i class="fa-regular fa-file-pdf fa-xs accent" aria-hidden="true"></i>&nbsp;Conference</a>&nbsp;&nbsp;
+            <a class="publinks" href="https://www.youtube.com/watch?v=X-YOL_o247E"><img src="images/video-outline.svg" width="14" height="11" alt="" aria-hidden="true">&nbsp;Video</a>&nbsp;&nbsp;
+            <button class="absbutton" type="button" onclick="mytoggle('abs3')" aria-controls="abs3" aria-expanded="false"><img src="images/plus-outline.svg" id="abs3_plus" width="12" height="12" alt="" aria-hidden="true">&nbsp;Abstract</button>&nbsp;&nbsp;
+          <button class="absbutton" type="button" onclick="mytoggle('bib3')" aria-controls="bib3" aria-expanded="false"><img src="images/plus-outline.svg" id="bib3_plus"  width="12"  height="12"  alt="" aria-hidden="true">&nbsp;BibTeX</button>
           
           <div class="bibtex" id="bib3">
             <pre>
@@ -550,10 +550,10 @@ Our construction relies on new algorithmic results for codes obtained via the qu
             <h4> Symbolic determinant identity testing and non-commutative ranks of matrix Lie algebras </h4>
               <p class="authors"> Joint work with <a class="authors" href ="http://old.sztaki.hu/~ivanyos/">Gábor Ivanyos</a> and <a class="authors" href ="https://profiles.uts.edu.au/Youming.Qiao">Youming Qiao</a>. </p>
             <a class="publinks" href="https://arxiv.org/abs/2109.06403"><img src="images/arxiv-logomark-small.svg" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
-              <a class="publinks" href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ITCS.2022.87"><i class="fa-regular fa-file-pdf fa-xs" aria-hidden="true"></i>&nbsp;Conference</a>&nbsp;&nbsp;
-            <a class="publinks" href="https://www.youtube.com/watch?v=XxilFVyHwJk"><img src="images/yt_icon.svg" width="18" height="14">&nbsp;Video</a>&nbsp;&nbsp;
-            <button class="absbutton" type="button" onclick="mytoggle('abs2')" aria-controls="abs2" aria-expanded="false"><img src="images/plus.gif" id="abs2_plus" width="12" height="12" alt="" aria-hidden="true">&nbsp;Abstract</button>&nbsp;&nbsp;
-          <button class="absbutton" type="button" onclick="mytoggle('bib2')" aria-controls="bib2" aria-expanded="false"><img src="images/plus.gif" id="bib2_plus"  width="12"  height="12"  alt="" aria-hidden="true">&nbsp;BibTeX</button>
+              <a class="publinks" href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ITCS.2022.87"><i class="fa-regular fa-file-pdf fa-xs accent" aria-hidden="true"></i>&nbsp;Conference</a>&nbsp;&nbsp;
+            <a class="publinks" href="https://www.youtube.com/watch?v=XxilFVyHwJk"><img src="images/video-outline.svg" width="14" height="11" alt="" aria-hidden="true">&nbsp;Video</a>&nbsp;&nbsp;
+            <button class="absbutton" type="button" onclick="mytoggle('abs2')" aria-controls="abs2" aria-expanded="false"><img src="images/plus-outline.svg" id="abs2_plus" width="12" height="12" alt="" aria-hidden="true">&nbsp;Abstract</button>&nbsp;&nbsp;
+          <button class="absbutton" type="button" onclick="mytoggle('bib2')" aria-controls="bib2" aria-expanded="false"><img src="images/plus-outline.svg" id="bib2_plus"  width="12"  height="12"  alt="" aria-hidden="true">&nbsp;BibTeX</button>
           
           <div class="bibtex" id="bib2">
             <pre>
@@ -605,9 +605,9 @@ Our construction relies on new algorithmic results for codes obtained via the qu
                 <h4> The Mahler measure for arbitrary tori </h4>
                 <p class="authors"> Joint work with <a href ="https://dms.umontreal.ca/~mlalin/"> Matilde Lalín </a>.</p>
                 <a class="publinks" href="https://arxiv.org/abs/1708.02466"><img src="images/arxiv-logomark-small.svg" width="14" height="14">&nbsp;arXiv</a>&nbsp;&nbsp;
-                <a class="publinks" href="https://link.springer.com/article/10.1007/s40993-018-0112-3"><i class="fa-regular fa-file-pdf fa-xs" aria-hidden="true"></i>&nbsp;Journal</a>&nbsp;&nbsp;
-                <button class="absbutton" type="button" onclick="mytoggle('abs1')" aria-controls="abs1" aria-expanded="false"><img src="images/plus.gif" id="abs1_plus" width="12" height="12" alt="" aria-hidden="true">&nbsp;Abstract</button>&nbsp;&nbsp;
-                  <button class="absbutton" type="button" onclick="mytoggle('bib1')" aria-controls="bib1" aria-expanded="false"><img src="images/plus.gif" id="bib1_plus"  width="12"  height="12"  alt="" aria-hidden="true">&nbsp;BibTeX</button><br />
+                <a class="publinks" href="https://link.springer.com/article/10.1007/s40993-018-0112-3"><i class="fa-regular fa-file-pdf fa-xs accent" aria-hidden="true"></i>&nbsp;Journal</a>&nbsp;&nbsp;
+                <button class="absbutton" type="button" onclick="mytoggle('abs1')" aria-controls="abs1" aria-expanded="false"><img src="images/plus-outline.svg" id="abs1_plus" width="12" height="12" alt="" aria-hidden="true">&nbsp;Abstract</button>&nbsp;&nbsp;
+                  <button class="absbutton" type="button" onclick="mytoggle('bib1')" aria-controls="bib1" aria-expanded="false"><img src="images/plus-outline.svg" id="bib1_plus"  width="12"  height="12"  alt="" aria-hidden="true">&nbsp;BibTeX</button><br />
                   <br/>
     
                   <div class="bibtex" id="bib1">

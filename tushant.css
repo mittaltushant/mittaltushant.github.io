@@ -407,8 +407,8 @@ main {
             flex-shrink: 0;
         font-size: 14px;
         font-weight: 600;
-        line-height: 2.4;
-        margin: 4px 0 0;
+        line-height: 1.73;
+        margin: 2px 0 0;
         text-align: right;
         width: 72px; }
         @media only screen and (max-width: 700px) {
@@ -426,8 +426,8 @@ main {
       flex-shrink: 0;
   font-size: 13px;
   font-weight: 600;
-  line-height: 2.4;
-  margin: 4px 0 0;
+  line-height: 1.73;
+  margin: 2px 0 0;
   text-align: right;
   width: 72px; }
   @media only screen and (max-width: 700px) {
@@ -438,6 +438,11 @@ main {
               order: 2;
       text-align: left;
       width: auto; } }
+.dated-page .lhs,
+.dated-page .fixed-date {
+  color: #737373;
+  font-weight: 400; }
+
   .icon-label {
         -ms-flex-negative: 0;
             flex-shrink: 0;
@@ -486,6 +491,20 @@ h4 .icons {
   vertical-align: baseline;
   width: auto; }
 
+/* Expand icon link targets without changing the visible size or spacing. */
+.dated-page .post-details a[aria-label],
+.home-page .social a {
+  position: relative; }
+
+.dated-page .post-details a[aria-label]::after,
+.home-page .social a::after {
+  content: "";
+  position: absolute;
+  inset: -4px -2px; }
+
+.home-page .social a::after {
+  inset-inline: -6px; }
+
 .date {
   font-size: 10px;
   font-weight: 400;
@@ -517,14 +536,43 @@ h4 .icons {
               flex-direction: column; } }
 
 .post.publication-section-heading {
-  margin-bottom: 16px; }
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 20px;
+  margin-bottom: 24px; }
+
+.publication-section-heading > .icons {
+  display: flex;
+  justify-content: flex-end;
+  order: 0;
+  margin: 0;
+  line-height: 1; }
+
+.publication-section-heading > .post-details {
+  min-width: 0; }
+
+.publication-section-start {
+  padding-top: 24px; }
+
+@media only screen and (min-width: 701px) {
+  .dated-page .post {
+    justify-content: flex-end;
+    column-gap: 20px; }
+
+  .dated-page .undergraduate-notes > summary {
+    grid-template-columns: 118px minmax(0, 1fr);
+    column-gap: 20px; }
+}
 
 .publication-venue {
   color: grey;
   width: 126px;
   font-size: 13px;
   font-weight: 400;
-  line-height: 1.73; }
+  line-height: 1.73;
+  /* Match the top of the Pagella publication titles. */
+  margin-top: 2px; }
 
 .publication-venue .venue-event {
   display: block; }
@@ -539,7 +587,8 @@ h4 .icons {
 
 @media only screen and (max-width: 700px) {
   .publication-venue {
-    width: auto; }
+    width: auto;
+    margin-top: 7px; }
 }
 
 .post-details {
@@ -766,33 +815,54 @@ svg {
         font:inherit;
         cursor:pointer;
         color:grey;
-        font-size: 14px;
+        font-size: 12px;
       }
 
 .publinks{
         cursor:pointer;
         color:grey;
-        font-size: 14px;
+        font-size: 12px;
       }
+
+.publinks,
+.absbutton {
+  margin-inline-end:6px;
+  white-space:nowrap;
+}
+
+.publinks:hover,
+.publinks:focus-visible,
+.absbutton:hover,
+.absbutton:focus-visible {
+  text-decoration:underline;
+  text-decoration-thickness:1px;
+  text-underline-offset:3px;
+}
 
 
 .pub {
   margin-bottom:16pt;
 }
 
-.abstract {
+.abstract,
+.bibtex {
   display:none;
   height:auto;
-  margin:0;
-  margin-left:10px;
-  border:1px dashed #9ac0cd;
-  width:calc(100% - 10px);
+  margin:10px 0 0;
+  border:1px solid #e5e5e5;
+  border-left:2px solid #f22939;
+  width:100%;
   max-width:100%;
   overflow-x:auto;
   overflow-wrap:anywhere;
-  padding:10px;
-  background-color:#e5ecf9;
+  padding:12px 14px;
+  background-color:#f7f7f7;
+  color:#363838;
+}
+
+.abstract {
   font-size: 14px;
+  line-height: 1.5;
 }
 
 .abstract a {
@@ -811,22 +881,8 @@ svg {
   color:inherit;
 }
 
-.bibtex {
-  display:none;
-  height:auto;
-  margin:0;
-  margin-left:4px;
-  border:1px dashed #9ac0cd;
-  width:calc(100% - 4px);
-  max-width:100%;
-  overflow-x:auto;
-  padding:4px;
-  background-color:#e5ecf9;
-/*  white-space:pre;
-  family:monospace;*/
-}
-
 .bibtex pre {
+  margin:0;
   white-space:pre-wrap;
   overflow-wrap:anywhere;
 }
