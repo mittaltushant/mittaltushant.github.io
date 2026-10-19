@@ -372,7 +372,9 @@ h2 {
     width: auto; }
 }
 
-h4 {
+h4,
+.dated-page .post-details > h2,
+.dated-page .post-details > .project-title {
     font-size: 15px;
     font-weight: 700;
     line-height: 1.73;
@@ -603,6 +605,9 @@ h4 .icons {
   font-weight:200;
   margin: 0; }
 
+.dated-page .excerpt {
+  font-size: 13px; }
+
 
 header {
   -webkit-box-align: center;
@@ -800,7 +805,7 @@ svg {
              }
 
 .authors {
-        font-size: 12px;
+        font-size: 13px;
         line-height: 1.73;
         margin: 0;
         color:grey;
@@ -870,7 +875,7 @@ svg {
 }
 
 .authors a {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.73;
   margin: 0;
   color:grey;

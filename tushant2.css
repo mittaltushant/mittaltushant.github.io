@@ -590,7 +590,8 @@ svg {
   width: auto; }
 
 .home-page .name-initial-t {
-  height: .7em; }
+  height: .7em;
+  transform: translateY(1px); }
 
 .home-page h2 {
   font-weight: 500; }
