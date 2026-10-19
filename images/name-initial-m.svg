@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="51.5 37.5 90 50" fill="none">
+  <title>m</title>
+  <!-- From the Animated Letters alphabet used by the monogram (js/letters.js). -->
+  <g stroke="#363838" stroke-width="8" stroke-linecap="butt">
+    <path d="m 76.5 62.5 m 0 -20 a 20 20 0 1 1 0 40 a 20 20 0 1 1 0 -40" stroke-dashoffset="251.32741228718345" stroke-dasharray="125.66370614359172 94.24777960769379 94.24777960769379 31.415926535897924 125.66370614359172"/>
+    <path d="m 116.5 62.5 m 0 -20 a 20 20 0 1 1 0 40 a 20 20 0 1 1 0 -40" stroke-dashoffset="251.32741228718345" stroke-dasharray="125.66370614359172 94.24777960769379 94.24777960769379 31.415926535897924 125.66370614359172"/>
+    <path d="m 56.5 0 l 0 125" stroke-dashoffset="250" stroke-dasharray="125 163.5 48"/>
+  </g>
+</svg>

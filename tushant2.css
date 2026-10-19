@@ -282,7 +282,7 @@ html {
 
 body {
   color: #363838;
-  font-family: "Libre Baskerville", serif; }
+  font-family: "Libre Baskerville", Georgia, "Times New Roman", serif; }
 
 ul {
   list-style: none;
@@ -564,6 +564,37 @@ svg {
       /* Animated t */
 
 /* Homepage: animated monogram and a portrait beside the bio. */
+.home-page h1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: .3em;
+  font-family: "Nunito Sans", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #363838;
+  letter-spacing: 0;
+  line-height: 1.15; }
+
+.home-page .name-word {
+  display: inline-flex;
+  align-items: baseline;
+  gap: .035em;
+  white-space: nowrap; }
+
+.home-page .name-word > span {
+  font-size: .9em; }
+
+.home-page .name-initial {
+  flex: 0 0 auto;
+  width: auto; }
+
+.home-page .name-initial-t {
+  height: .7em; }
+
+.home-page h2 {
+  font-weight: 500; }
+
 .home-page main {
   width: 736px;
   padding: 64px 0 40px; }
@@ -575,16 +606,33 @@ svg {
   width: 598px; }
 
 .home-page .logo {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
+  gap: 8px;
   width: 232px; }
+
+.home-page .t {
+  display: flex;
+  justify-content: center;
+  /* Discount the empty space below the letter inside the SVG. */
+  height: 100px; }
+
+.home-page .t svg {
+  display: block;
+  /* Center the visible letter within the animation's asymmetric SVG canvas. */
+  transform: translateX(12px); }
 
 .home-page .under {
   position: static;
-  width: auto;
+  width: 100%;
   margin: 0; }
+
+.home-page .social {
+  justify-content: center; }
+
+.home-page .social a:last-child {
+  margin-right: 0; }
 
 .home-page .bio {
   display: flow-root; }
@@ -608,7 +656,6 @@ svg {
 
 @media only screen and (max-width: 1080px) {
   .home-page .logo {
-    flex-direction: row;
     align-items: center;
     width: 736px;
     margin: 0 auto;
@@ -620,22 +667,28 @@ svg {
 
 @media only screen and (max-width: 780px) {
   .home-page .logo {
-    display: grid;
-    grid-template-columns: 48px minmax(0, 1fr) 80px;
-    gap: 12px;
+    grid-template-columns: minmax(0, 1fr) 80px;
+    gap: 8px 12px;
     width: 100%;
     padding: 28px 16px 0; }
 
   .home-page .t {
+    grid-column: 1;
+    grid-row: 1;
     width: 48px;
     height: 64px; }
 
   .home-page .t svg {
     width: 78px;
-    height: 64px; }
+    height: 64px;
+    transform: translateX(6px); }
+
+  .home-page .under {
+    grid-column: 1;
+    grid-row: 2; }
 
   .home-page h1 {
-    font-size: 18px; }
+    font-size: clamp(22px, 6.3vw, 28px); }
 
   .home-page .social a {
     margin-right: 12px; }
@@ -645,6 +698,8 @@ svg {
 
   .home-page .mobile-portrait {
     display: block;
+    grid-column: 2;
+    grid-row: 1 / span 2;
     width: 80px;
     height: 92px; }
 

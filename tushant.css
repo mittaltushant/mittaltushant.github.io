@@ -280,9 +280,16 @@ html {
   margin: 0;
   padding: 0; }
 
+@font-face {
+  font-family: "TeX Gyre Pagella";
+  src: url("assets/fonts/tex-gyre-pagella/texgyrepagella-bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap; }
+
 body {
   color: #363838;
-  font-family: "Libre Baskerville", serif; }
+  font-family: "Libre Baskerville", Georgia, "Times New Roman", serif; }
 
 ul {
   list-style: none;
@@ -367,9 +374,9 @@ h2 {
 
 h4 {
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.73;
-    font-family: "Palatino";
+    font-family: "TeX Gyre Pagella", "Palatino Linotype", Palatino, Georgia, serif;
    }
 
 em {
@@ -643,6 +650,12 @@ hr {
 
 .logo-internal svg {
   display: block; }
+
+.logo-internal h2 {
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400; }
 
 .logo-internal .under-small {
   position: static;
